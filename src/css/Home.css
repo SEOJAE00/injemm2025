@@ -1,0 +1,119 @@
+
+
+.Home-page {
+  width: 100%;
+  min-height: 100vh; /* 화면 높이 꽉 채우기 */
+  background-image: url("/img/main_back.png");
+  background-repeat: no-repeat;
+  background-size: cover; /* 화면 비율에 맞춰 꽉 채우기 */
+  background-position: center top; /* 위쪽 기준으로 고정 */
+  background-color: #0009ff;
+}
+/* 1200px 이하일 때 */
+@media (max-width: 1200px) {
+  .Home-page {
+    background-position: center top; /* 여전히 위쪽 고정 */
+  }
+}
+
+main {
+  padding-top: 0px;
+}
+
+.hero-content, .Home-sub{
+  position: relative;
+  padding: 0 80px;
+}
+
+.sub-title {
+  /* 메인 타이틀 58/B/행간90 */
+  position: absolute;
+  margin: 630px 0 0 0;
+  /* top: 715px;
+  left: 80px; */
+  font-family: "Pretendard-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffd000;
+  font-size: 58px;
+  letter-spacing: -1.45px;
+  line-height: 90px;
+  white-space: nowrap;
+}
+
+.description {
+  /* 메인 타이틀 38/R/행간55 */
+  position: absolute;
+  margin: 100px 0 0 0;
+  /* top: 185px;
+  left: 80px; */
+  font-family: "Pretendard-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 38px;
+  letter-spacing: -0.95px;
+  line-height: 55px;
+}
+
+/* 반응형 여백 조절 */
+@media (max-width: 1200px) and (min-width: 769px) {
+  .hero-content ,.Home-sub{
+    padding: 0 60px;
+  }
+  .sub-title {
+    margin: 543px 0px 0 0;
+    font-size: 44px;
+  }
+  .description {
+    margin: 80px 0px 0 0;
+    line-height: 40px;
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content ,.Home-sub{
+    padding: 0 40px;
+  }
+  .sub-title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 30px;
+  }
+  .description {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 86px;
+  }
+   .Home-page {
+    background-image: url("/img/main_back_mobile.png");
+    background-size: cover;
+    background-position: top left;
+  }
+}
+@media (max-width: 390px) {
+
+  .hero-content ,.Home-sub{
+    padding: 0 20px; /* 모바일에서는 여백 줄이기 */
+    position: absolute;
+    width: 100%;
+  }
+
+  .sub-title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 150% */
+    letter-spacing: -0.5px;
+    white-space: normal; /* 줄바꿈 허용 */
+    margin-top: 40px;
+  }
+
+  .description {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    letter-spacing: -0.5px;
+    margin-top: 90px;
+  }
+}

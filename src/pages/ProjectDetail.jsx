@@ -1,0 +1,101 @@
+import "../css/ProjectDetail.css";
+import "../css/about.css"
+import dcsData from "../data/dcs.json"
+import dcData from "../data/dc.json"
+import { useNavigate, useParams } from 'react-router-dom';
+
+export default function ProjectDetail() {
+
+  let {menu, detail} = useParams();
+  let navigate = useNavigate();
+
+  let useData = menu === 'digitalcontentsstudio' ? dcsData : dcData;
+  let filteredData = useData.filter(item => item.projectUrl === detail);
+  let filteredDataIndex = useData.findIndex(item => item.projectUrl === detail);
+  let imgPath = menu === 'digitalcontentsstudio' ? "Digital_Contents_Studio_Chon" : "Degree_Project_in_DC_Design_Ryou";
+
+  let prevIndex = filteredDataIndex === 0 ? useData.length - 1 : filteredDataIndex - 1;
+  let nextIndex = filteredDataIndex === useData.length - 1 ? 0 : filteredDataIndex + 1;
+
+
+  return (
+    <div className="project-detail-page">
+
+      <nav className="mobile-back-nav" role="navigation" aria-label="뒤로가기 네비게이션">
+        <button className="back-button" onClick={()=>navigate(-1)}>
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+            <circle cx="20" cy="20" r="20" transform="matrix(-1 0 0 1 39.9922 0)" fill="#0009FF" />
+            <path d="M23.2188 11.1719L13.5129 20.5836L23.2188 29.7013" stroke="#FFD000" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+          <span className="back-text">뒤로가기</span>
+        </button>
+      </nav>
+
+      <div className='project-name name-upper'>{filteredData[0].projectName}</div>
+      <div className='project-name name-lower'>{filteredData[0].projectNameKo}</div>
+      <div className='desc-text-wrapper'>
+        <div className='description-project'>{filteredData[0].descriptionKo}</div>
+        <div className='description-project'>{filteredData[0].descriptionEn}</div>
+      </div>
+      <div className='student-info'>
+        {
+          filteredData[0].nameKo.map((a, i)=>{
+            return(
+              <div key={i} className=''>
+                <div className='student-name name-upper'>{a}&nbsp;&nbsp;<span className='student-name name-lower'>{filteredData[0].nameEn[i]}</span></div>
+                <div className='text-email'>{filteredData[0].email[i]}</div>
+              </div>
+            )
+          })
+        }
+      </div>
+
+      <iframe className='youtube-content' src={filteredData[0].youtubeLink} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen/>
+
+      {
+        Array.from({ length: filteredData[0].imageLength }).map((a, i)=>{
+          return (  
+            <div key={i} className='img-wrapper'>
+              {/* <img src={`https://injemm2025image.dothome.co.kr/${imgPath}/${filteredData[0].folderName}/${filteredData[0].projectUrl}_${i}`} className='img-content'/> 파일 수합하고 이걸로 바꾸기 */}
+              <img src='/img/test1.png' className='img-content'/>
+            </div>
+          )
+        })
+      }
+
+      <div className='btn-protopie-wrapper'>
+        <a href={filteredData[0].protopieLink} target='blank'>
+          <button className='btn-protopie'>프로토파이 연결 링크</button>
+        </a>
+      </div>
+
+      <div className='btn-layout'>
+        <div className='btn-prev-wrapper' onClick={()=>{
+          navigate(`/project/${menu}/${useData[prevIndex].projectUrl}`);
+          window.scrollTo({top: 0, behavior: 'auto'});
+        }}>
+          <div className='btn-prev'>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69 69" fill="none">
+              <circle cx="34.0462" cy="34.0422" r="34" fill="#0009FF"/>
+              <path d="M39.3174 21.1873L23.8096 33.8419C23.438 34.1451 23.4388 34.7132 23.8113 35.0154L39.3174 47.5963" stroke="#FFD000" strokeWidth="5.29479" strokeLinecap="round"/>
+            </svg>
+          </div>
+          <div className='btn-prev-text'>이전 작품</div>
+        </div>
+        <div className='btn-prev-wrapper' onClick={()=>{
+          navigate(`/project/${menu}/${useData[nextIndex].projectUrl}`);
+          window.scrollTo({top: 0, behavior: 'auto'});
+        }}>
+          <div className='btn-prev-text'>다음 작품</div>
+          <div className='btn-next'>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69 69" fill="none">
+              <circle cx="34.0462" cy="34.0422" r="34" fill="#0009FF"/>
+              <path d="M39.3174 21.1873L23.8096 33.8419C23.438 34.1451 23.4388 34.7132 23.8113 35.0154L39.3174 47.5963" stroke="#FFD000" strokeWidth="5.29479" strokeLinecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  );
+}

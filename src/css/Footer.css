@@ -1,0 +1,84 @@
+.inje-footer {
+  width: 100%;
+  background: #e4eef9;
+  box-shadow: 0 0 5px 0 rgba(0, 4, 125, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+.inje-footer-group {
+  width: 100%;
+  max-width: 1560px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 24px 60px;
+  gap: 22%;
+}
+
+.inje-footer-group-p-left,
+.inje-footer-group-p-right {
+  color: #000;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+  margin: 0;
+  text-align: left;
+}
+
+/* ===== 1200px 이하 ===== */
+@media (max-width: 1200px) {
+  .inje-footer-group {
+    padding: 24px 60px;
+    gap: 18%;
+  }
+  .inje-footer-group-p-left,
+  .inje-footer-group-p-right {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/* ===== 768px 이하 ===== */
+@media (max-width: 768px) {
+  .inje-footer-group {
+    padding: 14px 40px;
+    gap: 12%;
+  }
+  .inje-footer-group-p-left,
+  .inje-footer-group-p-right {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+/* ===== 390px 이하 ===== */
+@media (max-width: 650px) {
+  .inje-footer-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 17px 20px;
+  }
+  .inje-footer-group-p-left,
+  .inje-footer-group-p-right {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+/* ===== 390px 이하 ===== */
+@media (max-width: 390px) {
+  .inje-footer-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 17px 20px;
+  }
+  .inje-footer-group-p-left,
+  .inje-footer-group-p-right {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
