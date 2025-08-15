@@ -106,7 +106,7 @@
   }
   .work-card,
   .thumb-wrap {
-    width: 350px;
+    width: 100%;
     max-width: 350px;
   }
 }
@@ -122,6 +122,9 @@
     width: 100%;
     max-width: 100%;
   }
+      .designer-detail-page {
+    padding: 156px 40px 106px 40px;
+  }
 }
 
 /* 767px 이하 - 2열 */
@@ -136,6 +139,10 @@
   .thumb-wrap {
     max-width: 327px;
   }
+    .designer-detail-page {
+    padding: 156px 40px 106px 40px;
+  }
+  
 }
 
 /* 1199px 이하 - 178px 카드 크기 */
@@ -153,6 +160,8 @@
   .thumb-wrap {
     max-width: 178px;
   }
+  
+  
 }
 
 /* 1919px 이하 - 335px 카드 크기 */
