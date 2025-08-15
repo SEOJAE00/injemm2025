@@ -5,7 +5,7 @@
   padding: 100px 60px 0;
 }
 
-.desc-text-wrapper {
+.desc-text-wrapper-detail {
   display: flex;
   max-width: 1440px;
   gap: 40px;
@@ -153,7 +153,7 @@
     padding: 80px 60px 0;
   }
 
-  .desc-text-wrapper {
+  .desc-text-wrapper-detail {
     max-width: 1080px;
   }
 
@@ -219,7 +219,7 @@
     padding: 156px 40px 0;
   }
 
-  .desc-text-wrapper {
+  .desc-text-wrapper-detail {
     flex-direction: column;
     max-width: 768px;
     gap: 24px;
@@ -277,7 +277,7 @@
     padding: 110px 20px 0;
   }
 
-  .desc-text-wrapper {
+  .desc-text-wrapper-detail {
     max-width: 350px;
     gap: 16px;
     margin-bottom: 24px;

@@ -24,9 +24,10 @@ function FallbackImage({ candidates = [], alt = "", className = "" }) {
   );
 }
 
+// 이미지호스팅에 올라간 게 없어 아직 사진은 안 보임
 function makeCandidates(kr, en) {
   const enc = (s) => encodeURIComponent(String(s || "").trim());
-  return [`${THUMB_BASE}${enc(kr)}.png`, `${THUMB_BASE}${enc(en)}.png`];
+  return [`${THUMB_BASE}${enc(kr)}.webp`, `${THUMB_BASE}${enc(en)}.webp`];
 }
 
 export default function DesignerDetail() {
@@ -67,6 +68,15 @@ export default function DesignerDetail() {
 
   return (
     <div className="designer-detail-page">
+      <nav className="mobile-back-nav" role="navigation" aria-label="뒤로가기 네비게이션">
+        <button className="back-button" onClick={()=>navigate(-1)}>
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+            <circle cx="20" cy="20" r="20" transform="matrix(-1 0 0 1 39.9922 0)" fill="#0009FF" />
+            <path d="M23.2188 11.1719L13.5129 20.5836L23.2188 29.7013" stroke="#FFD000" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+          <span className="back-text">뒤로가기</span>
+        </button>
+      </nav>
       <header className="designer-header">
         <div className="detail-name-kr">{designer.name_kr}</div>
         <div className="detail-name-en">{designer.name_en}</div>

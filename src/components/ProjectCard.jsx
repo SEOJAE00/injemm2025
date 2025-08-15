@@ -30,7 +30,7 @@ function ProjectCard() {
   return (
     <div className='project-grid'>
       
-      <div className='text-wrapper'>
+      <div className='text-wrapper-card'>
         <div className='subject subject-ko'>{useAboutData.subject[0]}</div>
         <div className='subject subject-en'>{useAboutData.subject[1]}</div>
         <div className='prof prof-ko'>{useAboutData.prof[0]}</div>

@@ -33,7 +33,7 @@ export default function ProjectDetail() {
 
       <div className='project-name name-upper'>{filteredData[0].projectName}</div>
       <div className='project-name name-lower'>{filteredData[0].projectNameKo}</div>
-      <div className='desc-text-wrapper'>
+      <div className='desc-text-wrapper-detail'>
         <div className='description-project'>{filteredData[0].descriptionKo}</div>
         <div className='description-project'>{filteredData[0].descriptionEn}</div>
       </div>

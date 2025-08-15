@@ -46,7 +46,7 @@ export default function About() {
           </div>
         ))}
       </div>
-      <div class="ab-con-body"><Outlet context={menu}></Outlet></div>
+      <div className="ab-con-body"><Outlet context={menu}></Outlet></div>
     </div>
   );
 }
