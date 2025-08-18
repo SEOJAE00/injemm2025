@@ -1,4 +1,6 @@
-/* 기존 헤더 스타일 유지 */
+/* =========================
+   HEADER (기존 스타일 유지)
+========================= */
 .header {
   position: fixed;
   top: 0;
@@ -9,10 +11,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #0000ff;
-  /* background: linear-gradient(92deg, rgba(0,9,255,0.6) 0%, rgba(0,9,255,0.4) 100%); */
   box-shadow: 0 0 7px #00047d;
-  /* backdrop-filter: blur(5px) brightness(100%); */
-  /* -webkit-backdrop-filter: blur(5px) brightness(100%);*/
   z-index: 1000;
   padding-left: 81px;
   padding-right: 81px;
@@ -29,52 +28,86 @@
 }
 
 .nav-link-wrapper {
-    display: flex;
-    align-items: center;
-    height: 86px;
-    width: 100%;
-    min-width: clamp(100px, 14vw, 180px);
-    text-align: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 86px;
+  width: 100%;
+  min-width: clamp(100px, 14vw, 180px);
+  text-align: center;
+  justify-content: center;
 }
 
+/* =========================
+   NAV-LINK (좌→우 바운스 애니메이션)
+========================= */
 .nav-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5.5px 0;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 0;
+  isolation: isolate;
   font-family: "Pretendard-Regular", Helvetica;
   font-size: 20px;
   color: #fff;
   letter-spacing: -0.5px;
   text-decoration: none;
-  border-radius: 20px;
-  transition: all 0.3s ease;
   line-height: 24px;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+/* 배경 애니메이션 레이어 */
+.nav-link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #ffd000;
+  border-radius: 20px;
+  transform: scaleX(0);
+  transform-origin: left center;
+  z-index: -1;
+}
+
+/* 활성화 시 애니메이션 적용 */
+.nav-link.active::before {
+  animation: slideBounce 0.7s forwards; /* 속도 조절 0.7s */
 }
 
 .nav-link.active {
-  font-weight: 600;
-  background-color: #ffd000;
   color: #0000ff;
+  font-weight: 600;
   max-width: clamp(150px, 14vw, 100px);
   width: 100%;
   padding: 5.5px 0;
 }
 
-.nav-link:hover {
-  font-weight: 600;
-  background-color: #ffd000;
-  color: #0000ff;
-  max-width: clamp(150px, 14vw, 100px);
-  width: 100%;
-  padding: 5.5px 0;
+/* =========================
+   바운스 슬라이드 keyframes
+========================= */
+@keyframes slideBounce {
+  0%   { transform: scaleX(0); }
+  60%  { transform: scaleX(1.1); }   /* 바운스 강도 조절: 1.1 = 살짝 넘어감 */
+  80%  { transform: scaleX(0.95); }  /* 뒤로 살짝 */
+  100% { transform: scaleX(1); }
 }
 
-/* 버거 버튼 */
+/* =========================
+   BURGER BUTTON
+========================= */
 .burger-btn {
   display: none !important;
   background: none;
   border: none;
   cursor: pointer;
 }
-/* 반응형 */
+
+/* =========================
+   RESPONSIVE
+========================= */
 @media (max-width: 1200px) and (min-width: 769px) {
   .header {
     padding: 0 60px;
@@ -98,9 +131,9 @@
   }
 }
 
-/* ------------------- */
-/* 모바일 메뉴 & 오버레이 */
-/* ------------------- */
+/* =========================
+   MOBILE MENU & OVERLAY
+========================= */
 .mobile-menu-overlay {
   position: fixed;
   top: 0;
@@ -114,8 +147,8 @@
 .mobile-menu {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* 세로 중앙 */
-  align-items: center;     /* 가로 중앙 */
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   right: -80%;
@@ -141,9 +174,9 @@
 .mobile-main-link {
   display: inline-block;
   padding: 10px 25px;
-  margin: 0 0 50px 0; /* 하단 50px 간격 */
+  margin: 0 0 50px 0;
   font-family: "Pretendard-Medium", "Pretendard", sans-serif;
-  font-weight: 500; /* Medium */
+  font-weight: 500;
   font-size: 32px;
   line-height: 38px;
   color: white;
@@ -155,14 +188,15 @@
   transition: all 0.3s ease;
   width: 100%;
   text-align: center;
-} 
+}
+
 .mobile-main-link.active {
   background-color: #ffd000;
-  color: #0009ff; /* 파란색 글씨 */
+  color: #0009ff;
   margin-bottom: 35px;
   padding: 3.5px 23px;
-  
 }
+
 .sub-menu {
   list-style: none;
   padding: 0;
@@ -172,25 +206,19 @@
 .sub-menu li {
   color: #ffd000;
   font-family: "Pretendard-Regular", "Pretendard", sans-serif;
-  font-weight: 200; /* Regular */
+  font-weight: 200;
   font-size: 22px;
   margin: 0 0 20px 0;
   cursor: pointer;
   padding-left: 0;
   text-align: center;
 }
+
 @keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-/* 닫기 버튼 */
 .close-btn {
   background: none;
   border: none;
@@ -208,44 +236,27 @@
     z-index: 1100;
     padding: 23px 40px 0 0;
   }
-  .burger-btn svg {
-    width: 35px;
-    height: 35px;
+  .burger-btn svg { width: 35px; height: 35px; }
+  ul.sub-menu { margin-bottom: 35px; }
 }
-ul.sub-menu {
-  margin-bottom: 35px;
-}
-}
-@media (max-width: 390px) {
-  .header { 
-     padding: 0 20px;
-     height: 70px;
 
-  }
-  .burger-btn svg {
-    width: 30px;
-    height: 30px;
+@media (max-width: 390px) {
+  .header { padding: 0 20px; height: 70px; }
+  .burger-btn svg { width: 30px; height: 30px; }
+  .close-btn { padding: 20px 20px 0 0; }
+  .close-btn svg { width: 30px; }
+  .mobile-main-link { margin-bottom: 40px; }
+  .mobile-main-link.active { margin-bottom: 33px; }
+  .sub-menu li { margin-bottom: 13px; }
+  ul.sub-menu { margin-bottom: 37px; }
 }
- .close-btn {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: 1100;
-    padding: 20px 20px 0 0;
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-link,
+  .nav-link::before,
+  .mobile-main-link,
+  .mobile-main-link::before {
+    transition: none !important;
+    animation: none !important;
   }
- .close-btn svg {
-  width: 30px;
- }
- .mobile-main-link {
-  margin-bottom: 40px;
- }
- .mobile-main-link.active {
-  margin-bottom: 33px;
- }
- .sub-menu li {
-  margin-bottom: 13px;
- }
-ul.sub-menu {
-  margin-bottom: 37px;
-}
 }
