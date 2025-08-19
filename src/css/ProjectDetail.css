@@ -15,7 +15,6 @@
 .description-project {
   flex: 1;
   color: #000;
-  font-family: Pretendard;
   font-size: 23px;
   font-style: normal;
   font-weight: 400;
@@ -25,7 +24,6 @@
 
 .project-name {
   color: #000;
-  font-family: Pretendard;
   font-size: 38px;
   font-style: normal;
   line-height: normal;
@@ -34,7 +32,6 @@
 
 .student-name {
   color: #000;
-  font-family: Pretendard;
   font-size: 27px;
   font-style: normal;
   line-height: normal;
@@ -59,7 +56,6 @@
 
 .text-email {
   color: #0009FF;
-  font-family: Pretendard;
   font-size: 27px;
   font-style: normal;
   font-weight: 400;
@@ -95,13 +91,13 @@
   border-radius: 50px;
   background: rgba(255, 208, 0, 0.30);
   color: #0009FF;
-  font-family: Pretendard;
   font-size: 23px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.575px;
   border: none;
+  cursor: pointer;
 }
 
 .btn-prev {
@@ -132,7 +128,6 @@
 
 .btn-prev-text {
   color: #0009FF;
-  font-family: Pretendard;
   font-size: 23px;
   font-style: normal;
   font-weight: 400;

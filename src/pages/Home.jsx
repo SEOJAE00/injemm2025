@@ -11,7 +11,7 @@ export default function Home() {
           2025 Graduation Exhibition
         </p>
       </div>
-      <div class="Home-sub">
+      <div className="Home-sub">
         <h2 className="sub-title">여정의 전개</h2>
       </div>
     </div>

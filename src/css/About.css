@@ -61,7 +61,6 @@
 .tab-title {
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
-  font-family: Pretendard, sans-serif;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: -0.5px;
@@ -71,7 +70,6 @@
 .tab-subtitle {
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
-  font-family: Pretendard, sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: -0.4px;
@@ -87,7 +85,6 @@
 
 .text-wrapper {
   color: #000;
-  font-family: Pretendard, sans-serif;
   font-size: 38px;
   font-weight: 600;
   letter-spacing: -0.95px;
@@ -95,7 +92,6 @@
 
 .text-wrapper-2 {
   color: #000;
-  font-family: Pretendard, sans-serif;
   font-size: 38px;
   font-weight: 400;
   letter-spacing: -0.95px;
@@ -131,7 +127,6 @@
 .text-wrapper-body-right {
   flex: 1;
   color: #000;
-  font-family: Pretendard, sans-serif;
   font-size: 23px;
   font-weight: 400;
   line-height: 32px;
@@ -333,7 +328,6 @@
     gap: 15px;
     cursor: pointer;
     user-select: none;
-    font-family: Pretendard, sans-serif;
     font-weight: 300;
     font-size: 20px;
     color: #0009ff;
@@ -454,7 +448,6 @@
   background-color: #e4eef9;
   border-radius: 4px;
   overflow: hidden;
-  font-family: Pretendard, sans-serif;
   font-size: clamp(16px, 1.1vw, 20px);
   color: #202020;
   padding: 22px 0px;
@@ -492,7 +485,6 @@
 }
 
 .text-wrapper-body-right {
-  font-family: Pretendard, sans-serif;
   font-size: 23px;
   font-weight: 400;
   line-height: 32px;

@@ -31,7 +31,6 @@
 
 .subject {
   color: #000;
-  font-family: Pretendard;
   font-size: 38px;
   font-style: normal;
   line-height: normal;
@@ -50,7 +49,6 @@
 
 .prof {
   color: #000;
-  font-family: Pretendard;
   font-size: 34px;
   font-style: normal;
   line-height: normal;
@@ -76,7 +74,6 @@
 .description-subject {
   flex: 1;
   color: #000;
-  font-family: Pretendard;
   font-size: 23px;
   font-style: normal;
   font-weight: 400;
@@ -144,7 +141,6 @@
 
 .hover-text {
   color: #FFF;
-  font-family: Pretendard;
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.575px;
@@ -169,7 +165,6 @@
 
 .name-text {
   color: #000;
-  font-family: Pretendard;
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.575px;

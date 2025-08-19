@@ -1,5 +1,4 @@
 
-
 .Home-page {
   width: 100%;
   min-height: 100vh; /* 화면 높이 꽉 채우기 */
@@ -31,7 +30,6 @@ main {
   margin: 630px 0 0 0;
   /* top: 715px;
   left: 80px; */
-  font-family: "Pretendard-Bold", Helvetica;
   font-weight: 700;
   color: #ffd000;
   font-size: 58px;
@@ -46,7 +44,6 @@ main {
   margin: 100px 0 0 0;
   /* top: 185px;
   left: 80px; */
-  font-family: "Pretendard-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 38px;
