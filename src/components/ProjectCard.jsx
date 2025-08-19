@@ -56,7 +56,8 @@ function ProjectCard() {
                     <div className='hover-text htext1'>{a.projectName}</div>
                     <div className='hover-text htext2'>{a.projectNameKo}</div>
                   </div>
-                  <img src="/img/about1.png" style={{ display: loaded ? 'block' : 'none' }} onLoad={() => setLoaded(true)}></img>
+                  <img src="/img/about1.png" style={{ display: loaded ? 'block' : 'none' }} onLoad={() => setLoaded(true)}/>
+                  {/* <img src={`https://injemm2025image.dothome.co.kr/thumbnail/${a.projectUrl}`}/> 이걸로 바꾸기 */}
                 </div>
                 <div className='name-text ntext1'>{a.nameKo.join(', ')}</div>
                 <div className='name-text ntext2'>{a.nameEn.join(', ')}</div>
