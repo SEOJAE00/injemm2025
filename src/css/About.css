@@ -100,7 +100,7 @@
 
 .content-row {
   display: flex;
-  gap: 44px;
+  gap: 40px;
   margin-top: 40px;
   margin-bottom: 122px;
 }
@@ -109,7 +109,7 @@
 }
 .content-row-3 {
   display: flex;
-  gap: 44px;
+  gap: 40px;
   margin-top: 40px;
   margin-bottom: 122px;
 }
@@ -569,12 +569,12 @@
 @media (max-width: 768px) {
   .content-row {
     flex-direction: column-reverse;
-    gap: 0px;
+    gap: 24px;
     margin-bottom: 79px;
   }
   .content-row-3 {
     flex-direction: column;
-    gap: 0px;
+    gap: 24px;
     margin-bottom: 79px;
   }
   .committee-table {
@@ -650,6 +650,16 @@
 }
 /* --- 390px 이하 --- */
 @media (max-width: 390px) {
+  .content-row {
+    flex-direction: column-reverse;
+    gap: 16px;
+    margin-bottom: 79px;
+  }
+  .content-row-3 {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 79px;
+  }
   .committee-table{
     gap: 16px;
   }
