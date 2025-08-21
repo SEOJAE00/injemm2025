@@ -47,7 +47,9 @@ function ProjectCard() {
           useData.map((a, i)=>{
             return (
               <div key={i} onClick={()=>{
-                navigate(`/project/${menu}/${a.projectUrl}`);
+                navigate(`/project/${menu}/${a.projectUrl}`
+                  //, {state:{playVideo:true}}
+                );
                 window.scrollTo({top: 0, behavior: 'auto'});
               }}>
                 <div className='img-design'>
