@@ -1,3 +1,4 @@
+// Header.jsx
 import React, { useState, useEffect } from "react";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import "../css/header.css";
@@ -146,11 +147,11 @@ const Header = () => {
           </svg>
         </button>
 
-        <ul>
+        <ul className="main-menu-ul">
           <li>
             <button
               onClick={() => handleMenuClick("home", false)}
-              className={`mobile-main-link ${activeMenu === "home" ? "active" : ""}`}
+              className={`mobile-main-link ${activeMenu === "home" ? "" : ""}`}
             >
               HOME
             </button>
@@ -203,7 +204,7 @@ const Header = () => {
           <li>
             <button
               onClick={() => handleMenuClick("designer", false)}
-              className={`mobile-main-link ${activeMenu === "designer" ? "active" : ""}`}
+              className={`mobile-main-link ${activeMenu === "designer" ? "" : ""}`}
             >
               DESIGNER
             </button>
