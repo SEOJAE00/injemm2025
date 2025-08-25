@@ -4,9 +4,6 @@ import dcsData from "../data/dcs.json"
 import dcData from "../data/dc.json"
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { useRef, useEffect, useState } from 'react';
-import ReactPlayer from 'react-player';
-import YouTube from 'react-youtube';
-
 
 export default function ProjectDetail() {
 
@@ -20,89 +17,6 @@ export default function ProjectDetail() {
 
   let prevIndex = filteredDataIndex === 0 ? useData.length - 1 : filteredDataIndex - 1;
   let nextIndex = filteredDataIndex === useData.length - 1 ? 0 : filteredDataIndex + 1;
-
-    
-
-
-  const playerRef = useRef(null);
-
-  const [playing, setPlaying] = useState(true);
-  const [muted, setMuted] = useState(true);
-  const [progress, setProgress] = useState(0);
-  const [duration, setDuration] = useState(0);
-
-
-  // 이동 시 클릭 이벤트로 넘어온 경우
-  // useEffect(()=>{
-  //   if (location.state?.playVideo) {
-  //     setMuted(false);
-  //   }
-  // }, [])
-  
-
-  // 여기에 뮤트랑 오토플레이 넣으면 되긴 하는데 그럼 소리는 막힘
-  const onReady = (event) => {
-    playerRef.current = event.target;
-    setDuration(event.target.getDuration());
-
-    //playerRef.current?.mute();
-    //playerRef.current?.playVideo();
-  };
-
-  // 주기적으로 재생 위치 업데이트
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (playerRef.current && playing) {
-        const currentTime = playerRef.current.getCurrentTime();
-        setProgress((currentTime / duration) * 100 || 0);
-      }
-    }, 500);
-    return () => clearInterval(interval);
-  }, [playing, duration]);
-
-  const togglePlay = () => {
-    if (!playerRef.current) return;
-    if (playing) playerRef.current.pauseVideo();
-    else playerRef.current.playVideo();
-    setPlaying(!playing);
-  };
-
-  const toggleMute = () => {
-    if (!playerRef.current) return;
-    if (muted) playerRef.current.unMute();
-    else playerRef.current.mute();
-    setMuted(!muted);
-  };
-
-  const handleSeek = (e) => {
-    const newProgress = parseFloat(e.target.value);
-    if (playerRef.current) {
-      playerRef.current.seekTo((duration * newProgress) / 100, true);
-    }
-    setProgress(newProgress);
-  };
-
-  const toggleFullscreen = () => {
-    const iframe = playerRef.current?.getIframe();
-    if (iframe && iframe.requestFullscreen) {
-      iframe.requestFullscreen();
-    }
-  };
-
-  const opts = {
-    width: "100%",
-    height: "100%",
-    playerVars: {
-      autoplay: 1,
-      muted: 1,
-      controls: 0,
-      fs: 0,
-      modestbranding: 1,
-      rel: 0,
-      disablekb: 1
-    },
-  };
-
 
 
   return (
@@ -145,7 +59,7 @@ export default function ProjectDetail() {
         }
       </div>
 
-      {/* <div className="youtube-wrapper">
+      <div className="youtube-wrapper">
         <iframe
           src={filteredData[0].youtubeLink}
           title="YouTube video player"
@@ -153,53 +67,9 @@ export default function ProjectDetail() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
+          className='youtube-wrapper-iframe'
         />
-      </div> */}
-
-      <div className='youtube-wrapper'>
-      <YouTube className='youtube-wrapper-iframe' videoId="dQw4w9WgXcQ" opts={opts} onReady={onReady}  />
-      {/* 커스텀 컨트롤 */}
-      <div
-        style={{
-          position: "absolute",
-          bottom: "10px",
-          left: "10px",
-          right: "10px",
-          zIndex: 10,
-          display: "flex",
-          gap: "10px",
-          alignItems: "center",
-          background: "rgba(0,0,0,0.6)",
-          padding: "8px 12px",
-          borderRadius: "8px",
-        }}
-      >
-        <button onClick={togglePlay} style={{ color: "white" }}>
-          {playing ? "Pause" : "Play"}
-        </button>
-
-        <button onClick={toggleMute} style={{ color: "white" }}>
-          {muted ? "Unmute" : "Mute"}
-        </button>
-
-        <input
-          type="range"
-          min="0"
-          max="100"
-          step="0.1"
-          value={progress}
-          onChange={handleSeek}
-          style={{ flexGrow: 1 }}
-        />
-
-        <button onClick={toggleFullscreen} style={{ color: "white" }}>
-          Fullscreen
-        </button>
       </div>
-
-      </div>
-
-
 
       {
         Array.from({ length: filteredData[0].imageLength }).map((a, i)=>{
