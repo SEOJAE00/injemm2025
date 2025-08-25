@@ -13,8 +13,7 @@
   background-color: #0000ff;
   box-shadow: 0 0 7px #00047d;
   z-index: 1000;
-  padding-left: 81px;
-  padding-right: 81px;
+  padding: 0px 80px;
 }
 
 .logo-img {
@@ -24,7 +23,7 @@
 
 .nav-links {
   display: flex;
-  gap: 40px;
+  gap: 70px;
 }
 
 .nav-link-wrapper {
@@ -32,7 +31,7 @@
   align-items: center;
   height: 86px;
   width: 100%;
-  min-width: clamp(100px, 14vw, 180px);
+  min-width: clamp(100px, 14vw, 150px);
   text-align: center;
   justify-content: center;
 }
@@ -113,7 +112,7 @@
     height: 86px;
   }
   .nav-links {
-    gap: 24px;
+    gap: 70px;
   }
 }
 
@@ -146,7 +145,6 @@
 .mobile-menu {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   position: fixed;
   top: 0;
@@ -164,16 +162,15 @@
   right: 0;
 }
 
-.mobile-menu ul {
+.main-menu-ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 360px 0px 0px 0px;
+  text-align: center;
 }
 
 .mobile-main-link {
   display: inline-block;
-  padding: 10px 25px;
-  margin: 0 0 50px 0;
   font-weight: 500;
   font-size: 32px;
   line-height: 38px;
@@ -184,21 +181,22 @@
   cursor: pointer;
   border-radius: 50px;
   transition: all 0.3s ease;
-  width: 100%;
   text-align: center;
+  margin: 0 0 50px 0; /* ← 버튼 간격은 항상 50px 유지 */
+  letter-spacing: -0.8px;
 }
-
 .mobile-main-link.active {
   background-color: #ffd000;
   color: #0009ff;
-  margin-bottom: 35px;
-  padding: 3.5px 23px;
+  margin-bottom: 34px;  /* ← 원래 간격 유지 (34px → 50px) */
+  padding: 4px 22px; 
+  margin-top: -4px;   /* ← 주황 배경이 위아래로 4px 확장되면서 시각적으로 46px처럼 보임 */
 }
+
 
 .sub-menu {
   list-style: none;
   padding: 0;
-  margin: 10px 0 20px;
 }
 
 .sub-menu li {
@@ -208,7 +206,9 @@
   margin: 0 0 20px 0;
   cursor: pointer;
   padding-left: 0;
+  line-height: 26px;
   text-align: center;
+  letter-spacing: -0.55px;
 }
 
 @keyframes slideDown {
@@ -234,7 +234,7 @@
     padding: 23px 40px 0 0;
   }
   .burger-btn svg { width: 35px; height: 35px; }
-  ul.sub-menu { margin-bottom: 35px; }
+  ul.sub-menu { margin-bottom: 36px; }
 }
 
 @media (max-width: 390px) {
@@ -243,9 +243,15 @@
   .close-btn { padding: 20px 20px 0 0; }
   .close-btn svg { width: 30px; }
   .mobile-main-link { margin-bottom: 40px; }
-  .mobile-main-link.active { margin-bottom: 33px; }
-  .sub-menu li { margin-bottom: 13px; }
-  ul.sub-menu { margin-bottom: 37px; }
+  .mobile-main-link.active { margin-bottom: 36px; }
+  .sub-menu li { margin-bottom: 20px; }
+  ul.sub-menu { margin-bottom: 34px; }
+  .main-menu-ul {
+  list-style: none;
+  padding: 0;
+  margin: 270px 0px 0px 0px;
+  text-align: center;
+}
 }
 
 @media (prefers-reduced-motion: reduce) {
