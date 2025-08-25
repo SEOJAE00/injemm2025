@@ -235,7 +235,7 @@
 
   .project-detail-page {
     max-width: 768px;
-    padding: 156px 40px 0;
+    padding: 0 40px;
   }
 
   .desc-text-wrapper-detail {
@@ -289,7 +289,7 @@
 
   .project-detail-page {
     max-width: 390px;
-    padding: 110px 20px 0;
+    padding: 0 20px;
   }
 
   .desc-text-wrapper-detail {

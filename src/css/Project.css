@@ -26,7 +26,7 @@
 }
 
 .text-wrapper-card {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .subject {
@@ -223,11 +223,11 @@
 
   .project-page {
     max-width: 768px;
-    padding: 50px 40px 0px 40px;
+    padding: 0px 40px 0px 40px;
   }
 
   .project-grid {
-    margin-top: 86px;
+    margin-top: 0px;
   }
 
   .desc-text-wrapper {
@@ -255,11 +255,11 @@
 
   .project-page {
     max-width: 390px;
-    padding: 50px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
   }
 
   .project-grid {
-    margin-top: 54px;
+    margin-top: 0px;
   }
 
   .text-wrapper-card {

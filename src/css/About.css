@@ -312,13 +312,11 @@
     font-size: 30px;
   }
   .mobile-back-nav {
-    display: flex;
+    display: block;
     align-items: center;
     gap: 8px;
-    position: fixed;
-    top: 16px;
-    left: 16px;
     z-index: 1000;
+    margin: 58px 0;
   }
 
   .back-button {
@@ -331,10 +329,8 @@
     font-weight: 300;
     font-size: 20px;
     color: #0009ff;
-    height: 24px;
     flex-shrink: 0;
     top: 138px;
-    position: fixed;
     left: 40px;
     transition: top 0.3s ease;
   }
@@ -382,6 +378,14 @@
     padding: 0 20px;
     margin: 0px;
   }
+  .mobile-back-nav {
+    display: block;
+    align-items: center;
+    gap: 8px;
+    z-index: 1000;
+    margin: 42px 0;
+  }
+
   .back-button svg {
     width: 24px;
     height: 24px;
