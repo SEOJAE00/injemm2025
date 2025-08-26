@@ -24,10 +24,10 @@ function Aboutinfo() {
           </div>
 
           <div className="ab-right">
-            <p className="text-wrapper-body-right">
+            <p className="text-wrapper-body-right vi-p">
               {filteredData[0].descriptionKo}
             </p>
-            <p className="text-wrapper-body-right">
+            <p className="text-wrapper-body-right vi-p2">
               {filteredData[0].descriptionEn}
             </p>
           </div>
@@ -42,10 +42,10 @@ function Aboutinfo() {
         <div className="content-row-vi">
           <img src="/img/about1.png" alt="UNFOLD THE FLOW" className="visualid_img" />
           <div className="ab-right">
-            <p className="text-wrapper-body-right">
+            <p className="text-wrapper-body-right vi-p">
               {filteredData[0].descriptionKo}
             </p>
-            <p className="text-wrapper-body-right">
+            <p className="text-wrapper-body-right vi-p2">
               {filteredData[0].descriptionEn}
             </p>
           </div>
