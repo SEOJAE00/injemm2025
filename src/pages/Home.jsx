@@ -1,6 +1,17 @@
+import { useEffect } from "react";
 import "../css/Home.css";
 
 export default function Home() {
+  useEffect(() => {
+    // Home 페이지 들어왔을 때 스크롤 막기
+    document.body.style.overflowY = "hidden";
+
+    // 페이지 벗어날 때(언마운트) 원상복구
+    return () => {
+      document.body.style.overflowY = "auto";
+    };
+  }, []);
+
   return (
     <div className="Home-page">
       <div className="hero-content">
