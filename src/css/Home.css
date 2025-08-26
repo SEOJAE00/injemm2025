@@ -7,7 +7,9 @@
   background-size: cover; /* 화면 비율에 맞춰 꽉 채우기 */
   background-position: center top; /* 위쪽 기준으로 고정 */
   background-color: #0009ff;
+  
 }
+
 /* 1200px 이하일 때 */
 @media (max-width: 1200px) {
   .Home-page {
@@ -25,16 +27,16 @@ main {
 }
 
 .sub-title {
-  /* 메인 타이틀 58/B/행간90 */
+  /* 메인 타이틀 58/B/행간69 */
   position: absolute;
-  margin: 630px 0 0 0;
+  margin: 640px 0 0 0;
   /* top: 715px;
   left: 80px; */
   font-weight: 700;
   color: #ffd000;
   font-size: 58px;
   letter-spacing: -1.45px;
-  line-height: 90px;
+  line-height: 69px;
   white-space: nowrap;
 }
 
@@ -59,11 +61,13 @@ main {
   .sub-title {
     margin: 543px 0px 0 0;
     font-size: 44px;
+    letter-spacing: -0.025em;
   }
   .description {
     margin: 80px 0px 0 0;
     line-height: 40px;
     font-size: 26px;
+    letter-spacing: -0.65px;
   }
 }
 
@@ -75,11 +79,16 @@ main {
     font-size: 24px;
     line-height: 36px;
     margin-top: 30px;
+    letter-spacing: -0.6px;
+
+    
   }
   .description {
     font-size: 24px;
     line-height: 36px;
     margin-top: 86px;
+    letter-spacing: -0.6px;
+
   }
    .Home-page {
     background-image: url("/img/main_back_mobile.png");
