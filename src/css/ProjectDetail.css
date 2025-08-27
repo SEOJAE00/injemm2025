@@ -64,7 +64,7 @@
 
 .student-info {
   display: flex;
-  gap: 40px;
+  gap: 54px;
   margin-bottom: 64px;
 }
 
@@ -191,6 +191,7 @@
 
   .student-info {
     margin-bottom: 70px;
+    gap: 50px;
   }
 
   .text-email {
