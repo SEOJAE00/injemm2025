@@ -68,6 +68,7 @@ export default function DesignerDetail() {
 
   return (
     <div className="designer-detail-page">
+      <div className="p-d-back"></div>
       <nav className="mobile-back-nav" role="navigation" aria-label="뒤로가기 네비게이션">
         <button className="back-button" onClick={()=>navigate(-1)}>
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
