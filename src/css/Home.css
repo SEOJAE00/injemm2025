@@ -59,9 +59,10 @@ main {
     padding: 0 60px;
   }
   .sub-title {
-    margin: 543px 0px 0 0;
+    margin: 534px 0px 0 0;
     font-size: 44px;
     letter-spacing: -0.025em;
+    line-height: 53px;
   }
   .description {
     margin: 80px 0px 0 0;
