@@ -6,7 +6,7 @@ import "../css/header.css";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openSubMenu, setOpenSubMenu] = useState(null);
-  const [activeMenu, setActiveMenu] = useState(null);
+  const [activeMenu, setActiveMenu] = useState(null); // PC 메뉴 강조용
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -16,7 +16,7 @@ const Header = () => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
-  // 새로고침, 모바일 메뉴 온오프시 버튼 액티브 업데이트
+  // 새로고침, 모바일 메뉴 온오프시 버튼 액티브 업데이트 (PC 메뉴용)
   useEffect(() => {
     if (location.pathname.startsWith("/about")) {
       setActiveMenu("about");
@@ -46,10 +46,8 @@ const Header = () => {
     setOpenSubMenu(null);
   };
 
-  // 모바일 메뉴 클릭 처리 함수
+  // 모바일 상위 메뉴 클릭 처리
   const handleMenuClick = (menuName, hasSubMenu) => {
-    setActiveMenu(menuName);
-
     if (hasSubMenu) {
       // 하위 메뉴 토글
       setOpenSubMenu((prev) => (prev === menuName ? null : menuName));
@@ -72,8 +70,7 @@ const Header = () => {
   };
 
   // 하위 메뉴 클릭 시 페이지 이동 + 메뉴 닫기
-  const handleSubMenuClick = (parentMenu, path) => {
-    setActiveMenu(parentMenu);
+  const handleSubMenuClick = (path) => {
     setMenuOpen(false);
     setOpenSubMenu(null);
     navigate(path);
@@ -94,7 +91,7 @@ const Header = () => {
           <div className="nav-link-wrapper">
             <NavLink
               to="/about/unfoldtheflow"
-              className={`nav-link ${activeMenu === 'about' ? "active" : ""}`}
+              className={`nav-link ${activeMenu === "about" ? "active" : ""}`}
               onClick={() => setActiveMenu("about")}
             >
               ABOUT
@@ -132,9 +129,7 @@ const Header = () => {
       </header>
 
       {/* 오버레이 */}
-      {menuOpen && (
-        <div className="mobile-menu-overlay" onClick={toggleMenu}></div>
-      )}
+      {menuOpen && <div className="mobile-menu-overlay" onClick={toggleMenu}></div>}
 
       {/* 모바일 메뉴 */}
       <nav className={`mobile-menu ${menuOpen ? "open" : ""}`}>
@@ -151,7 +146,7 @@ const Header = () => {
           <li>
             <button
               onClick={() => handleMenuClick("home", false)}
-              className={`mobile-main-link ${activeMenu === "home" ? "" : ""}`}
+              className="mobile-main-link"
             >
               HOME
             </button>
@@ -160,24 +155,16 @@ const Header = () => {
           <li>
             <button
               onClick={() => handleMenuClick("about", true)}
-              className={`mobile-main-link ${activeMenu === "about" ? "active" : ""}`}
+              className={`mobile-main-link ${openSubMenu === "about" ? "active" : ""}`}
             >
               ABOUT
             </button>
             {openSubMenu === "about" && (
               <ul className="sub-menu">
-                <li onClick={() => handleSubMenuClick("about", "/about/unfoldtheflow")}>
-                  여정의 전개
-                </li>
-                <li onClick={() => handleSubMenuClick("about", "/about/visualidentity")}>
-                  비주얼 그래픽
-                </li>
-                <li onClick={() => handleSubMenuClick("about", "/about/digitalcontentsmajor")}>
-                  디지털콘텐츠 전공
-                </li>
-                <li onClick={() => handleSubMenuClick("about", "/about/preparatorycommittee")}>
-                  졸업준비 위원회
-                </li>
+                <li onClick={() => handleSubMenuClick("/about/unfoldtheflow")}>여정의 전개</li>
+                <li onClick={() => handleSubMenuClick("/about/visualidentity")}>비주얼 그래픽</li>
+                <li onClick={() => handleSubMenuClick("/about/digitalcontentsmajor")}>디지털콘텐츠 전공</li>
+                <li onClick={() => handleSubMenuClick("/about/preparatorycommittee")}>졸업준비 위원회</li>
               </ul>
             )}
           </li>
@@ -185,18 +172,14 @@ const Header = () => {
           <li>
             <button
               onClick={() => handleMenuClick("project", true)}
-              className={`mobile-main-link ${activeMenu === "project" ? "active" : ""}`}
+              className={`mobile-main-link ${openSubMenu === "project" ? "active" : ""}`}
             >
               PROJECT
             </button>
             {openSubMenu === "project" && (
               <ul className="sub-menu">
-                <li onClick={() => handleSubMenuClick("project", "/project/digitalcontentsstudio")}>
-                  디지털컨텐츠스튜디오
-                </li>
-                <li onClick={() => handleSubMenuClick("project", "/project/degreeprojectindcdesign")}>
-                  DC 졸업연구
-                </li>
+                <li onClick={() => handleSubMenuClick("/project/digitalcontentsstudio")}>디지털컨텐츠스튜디오</li>
+                <li onClick={() => handleSubMenuClick("/project/degreeprojectindcdesign")}>DC 졸업연구</li>
               </ul>
             )}
           </li>
@@ -204,7 +187,7 @@ const Header = () => {
           <li>
             <button
               onClick={() => handleMenuClick("designer", false)}
-              className={`mobile-main-link ${activeMenu === "designer" ? "" : ""}`}
+              className="mobile-main-link"
             >
               DESIGNER
             </button>
