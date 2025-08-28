@@ -1,8 +1,3 @@
-/* 8/27
-- 어바웃 탭 갭 수정 
-- 자간 수정 , 탭 활성화 폰트 굵기 수정
-( 탭 영역만 수정 )*/
-
 .about-page {
   background: #fff;
   box-sizing: border-box;
@@ -45,17 +40,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4px;
+  gap: 3.647px;
   flex-shrink: 1;
   border-radius: 90px;
   background: #E4EEF9;
   cursor: pointer;
   user-select: none;
   transition: background-color 0.3s ease;
-  width: clamp(280px, 0vw, 286px);
-    height: 87px;
-    padding: 12.764px 21.882px;
-    min-width: 286px;
 }
 
 .tab-item.active {
@@ -65,7 +56,6 @@
 .tab-item.active .tab-title,
 .tab-item.active .tab-subtitle {
   color: #fff;
-  font-weight: 600;
 }
 
 .tab-title {
@@ -98,7 +88,6 @@
   font-size: 38px;
   font-weight: 600;
   letter-spacing: -0.95px;
-  line-height: 46px;
 }
 
 .text-wrapper-2 {
@@ -107,15 +96,13 @@
   font-weight: 400;
   letter-spacing: -0.95px;
   margin-top: 10px;
-  line-height: 46px;
 }
 
 .content-row {
   display: flex;
   gap: 40px;
   margin-top: 40px;
-  margin-bottom: 80px;
-  align-items: flex-start;
+  margin-bottom: 122px;
 }
 .content-row > div {
   flex: 1;
@@ -124,17 +111,16 @@
   display: flex;
   gap: 40px;
   margin-top: 40px;
-  margin-bottom: 59px;
-  align-items: flex-start;
+  margin-bottom: 122px;
 }
 .content-row-3 > div {
   flex: 1;
 }
 .content-row-vi {
   display: flex;
-  gap: 40px;
+  gap: 87px;
   margin-top: 40px;
-  margin-bottom: 49px;
+  margin-bottom: 122px;
 }
 
 .text-wrapper-body-left,
@@ -151,12 +137,10 @@
 
 .visualid_img {
   width: 100%;
-  max-width: 700px;
+  max-width: 655px;
   height: auto;
 }
-.vi-p {
-  margin-bottom: 34px;
-}
+
 /* -----------------------------------------------------------------
 반응형 시작
 -------------------------------------------------------------------*/
@@ -165,9 +149,16 @@
   max-width: 1200px;
   gap: 22px;
 }
-.text-wrapper-body-right {
-  margin-bottom: 0px;
+
+@media (max-width: 1920px) {
+  .tab-item {
+    width: clamp(280px, 0vw, 286px);
+    height: 87px;
+    padding: 12.764px 21.882px;
+    min-width: 286px;
+  }
 }
+
 .text-wrapper-body-left,
 .text-wrapper-body-right {
   font-size: 23px;
@@ -178,18 +169,16 @@
 .text-wrapper-2 {
   font-size: 38px;
 }
-.vi-p {
-  margin-bottom: 34px;
-}
+
 .visualid_img {
-  max-width: 700px;
-  width: 100%;
+  max-width: 655px;
   height: 100%;
 }
 
 .ab-con-body {
-  margin-top: 100px;
+  margin-top: 101px;
 }
+
 @media (max-width: 1300px) and (min-width: 1201px) {
   .tab-item {
     width: clamp(240px, 14vw, 286px);
@@ -210,28 +199,22 @@
     min-width: 208px;
     height: 63px;
     padding: 9px 16px;
-    gap: 3px;
   }
 
   .tab-title {
     font-size: 15px;
-    letter-spacing: -0.375px;
   }
   .tab-subtitle {
     font-size: 11px;
-    letter-spacing: -0.275px;
   }
   .text-wrapper-body-left,
   .text-wrapper-body-right {
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: -0.5px;
+    font-size: 23px;
+    line-height: 32px;
   }
   .text-wrapper,
   .text-wrapper-2 {
     font-size: 30px;
-    line-height: 36px;
-    letter-spacing: -0.75px;
   }
   img.visualid_img {
     max-width: 520px;
@@ -243,7 +226,7 @@
     box-sizing: border-box;
     width: 100%;
     max-width: 1500px;
-    padding: 48px 60px 0px 60px;
+    padding: 47px 60px 0px 60px;
     margin: 0 auto;
     display: block;
     position: relative;
@@ -255,19 +238,21 @@
     display: flex;
     gap: 24px;
     margin-top: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 79px;
   }
-
+   .content-row-3 {
+    display: flex;
+    gap: 24px;
+    margin-top: 40px;
+    margin-bottom: 79px;
+  }
   .content-row-vi {
     display: flex;
     gap: 40px;
     margin-top: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 79px;
   }
   .text-wrapper-body-right {
-    margin-bottom: 0px;
-  }
-  .vi-p{
     margin-bottom: 24px;
   }
 }
@@ -292,7 +277,7 @@
     gap: 40px;
     margin-top: 40px;
     flex-wrap: wrap;
-    margin-bottom: 80px;
+    margin-bottom: 122px;
   }
   .text-wrapper-body-left,
   .text-wrapper-body-right {
@@ -302,9 +287,6 @@
     margin: 0;
   }
   .text-wrapper-body-right {
-    margin-bottom: 0px;
-  }
-  .vi-p{
     margin-bottom: 24px;
   }
   img.visualid_img {
@@ -330,11 +312,13 @@
     font-size: 30px;
   }
   .mobile-back-nav {
-    display: block;
+    display: flex;
     align-items: center;
     gap: 8px;
+    position: fixed;
+    top: 16px;
+    left: 16px;
     z-index: 1000;
-    margin: 58px 0;
   }
 
   .back-button {
@@ -347,8 +331,10 @@
     font-weight: 300;
     font-size: 20px;
     color: #0009ff;
+    height: 24px;
     flex-shrink: 0;
     top: 138px;
+    position: fixed;
     left: 40px;
     transition: top 0.3s ease;
   }
@@ -373,7 +359,7 @@
     padding: 0px 40px;
   }
   .ab-con-body {
-    margin-top: 0px;
+    margin-top: 156px;
   }
 }
 
@@ -387,29 +373,15 @@
   .text-wrapper-body-right {
     margin-bottom: 16px;
   }
-  .text-wrapper {
+  .text-wrapper,
+  .text-wrapper-2 {
     font-size: 22px;
-    letter-spacing: -0.55px;
-    line-height: 26px;
   }
-    .text-wrapper-2 {
-      font-size: 20px;
-      line-height: 24px;
-      letter-spacing: -0.5px;
-    }
   .about-page {
     width: 100%;
     padding: 0 20px;
     margin: 0px;
   }
-  .mobile-back-nav {
-    display: block;
-    align-items: center;
-    gap: 8px;
-    z-index: 1000;
-    margin: 42px 0;
-  }
-
   .back-button svg {
     width: 24px;
     height: 24px;
@@ -420,7 +392,7 @@
     font-size: 16px;
   }
   .ab-con-body {
-    margin-top: 0px
+    margin-top: 108px;
   }
   .content-row {
     display: flex;
@@ -443,7 +415,20 @@
 }
 
 /* 기본 레이아웃 */
-
+.content-row {
+  display: flex;
+  gap: 44px;
+  margin-top: 40px;
+  margin-bottom: 122px;
+  align-items: flex-start;
+}
+.content-row-3 {
+  display: flex;
+  gap: 44px;
+  margin-top: 40px;
+  margin-bottom: 122px;
+  align-items: flex-start;
+}
 
 /* 테이블 컨테이너 */
 .committee-table {
@@ -451,7 +436,7 @@
     flex-direction: column;
     gap: 10px;
     width: 100%;
-    max-width: 700px; /* 고정 제한 제거 */
+    max-width: 698px; /* 고정 제한 제거 */
     flex: 1; /* 반반 중 왼쪽 */
 }
 
@@ -478,29 +463,25 @@
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 20px;
-  line-height: 24px;
-  letter-spacing: -0.5px;
 }
 
 /* 팀원 */
 .team-members {
   flex: 1;
   text-align: left;
-  padding-left: 90px;
+  padding-left: 70px;
   padding-right: 20px;
   font-weight: 400;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 20px;
-  letter-spacing: -0.5px;
-  line-height: 24px;
 }
 
 /* 오른쪽 설명 */
 .ab-right {
   flex: 1;
-  max-width: 700px;
+  max-width: 655px;
 }
 
 .text-wrapper-body-right {
@@ -508,7 +489,7 @@
   font-weight: 400;
   line-height: 32px;
   letter-spacing: -0.575px;
-  
+  margin-bottom: 34px;
 }
 
 /* --- 1920px 이상 --- */
@@ -522,12 +503,12 @@
 @media (max-width: 1200px) {
   .content-row {
     gap: 24px;
-    margin-bottom: 80px;
+    margin-bottom: 79px;
     
   }
   .content-row-3 {
-    gap: 40px;
-    margin-bottom: 80px;
+    gap: 24px;
+    margin-bottom: 79px;
     
   }
   .committee-row {
@@ -537,7 +518,7 @@
   .text-wrapper-body-right {
     font-size: 20px;
     line-height: 30px;
-    letter-spacing: -0.5px;
+    margin-bottom: 24px;
   }
   .team-name {
     flex: 0 0 200px;
@@ -554,7 +535,7 @@
   .team-members {
     flex: 1;
     text-align: left;
-    padding-left:18px;
+    padding-left:0px;
     font-weight: 400;
     white-space: nowrap;
     overflow: hidden;
@@ -582,9 +563,6 @@
     width: 100%;
     max-width: 1000px;
 }
-.team-members {
-  padding-left: 115px;
-}
 }
 
 /* --- 768px 이하 --- */
@@ -592,12 +570,12 @@
   .content-row {
     flex-direction: column-reverse;
     gap: 24px;
-    margin-bottom: 80px;
+    margin-bottom: 79px;
   }
   .content-row-3 {
     flex-direction: column;
     gap: 24px;
-    margin-bottom: 80px;
+    margin-bottom: 79px;
   }
   .committee-table {
     max-width: 1000px;
@@ -619,18 +597,16 @@
     text-overflow: ellipsis;
     /* font-size: 16px; */
     font-size: 16px;
-    letter-spacing: -0.4px;
 }
   .team-members {
     flex: 1;
     text-align: left;
-    padding-left:115px;
+    padding-left:0px;
     font-weight: 400;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: clamp(16px, 1vw, 16px);
-    letter-spacing: -0.4px;
 }
   .ab-right {
     max-width: 100%;
@@ -664,13 +640,11 @@
     line-height: 24px;
     flex: 0;
     padding-left: 20px;
-    letter-spacing: -0.4px;
   }
   .text-wrapper-body-right {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 16px;
-    letter-spacing: -0.4px;
   }
 
 }
@@ -678,53 +652,43 @@
 @media (max-width: 390px) {
   .content-row {
     flex-direction: column-reverse;
-    gap: 30px;
-    margin-bottom: 14px;
+    gap: 16px;
+    margin-bottom: 79px;
   }
   .content-row-3 {
     flex-direction: column;
     gap: 16px;
-    margin-bottom: 14px;
+    margin-bottom: 79px;
   }
   .committee-table{
     gap: 16px;
   }
   .committee-table{
-    margin-top: 0px;
+    margin-top: 14px;
   }
   .committee-row {
     flex-direction: column;
     align-items: flex-start;
-    padding: 16px 20px;
+    padding: 14px 0px;
     height: auto;
   }
   .team-name {
     font-size: 20px;
-    margin-bottom: 10px;
-    line-height: 24px;
+    margin-bottom: 4px;
+    line-height: 30px;
     flex: 0;
-    padding-left: 0px;
-    letter-spacing: -0.5px;
+    padding-left: 20px;
   }
   .team-members {
     font-size: 16px;
     padding-left: 0;
-    line-height: 19px;
+    line-height: 24px;
     flex: 0;
-    padding-left: 0px;
-    letter-spacing: -0.4px;
+    padding-left: 20px;
   }
   .text-wrapper-body-right {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 0px;
-    letter-spacing: -0.4px;
-  }
-  .text-wrapper-body-left{
-
-  letter-spacing: -0.4px;
-  }
-  .vi-p{
     margin-bottom: 16px;
   }
 }
