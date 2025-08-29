@@ -114,7 +114,7 @@
   overflow: hidden;
   border: 1px solid #ccc;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   cursor: pointer;
 }
 
@@ -168,17 +168,16 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.575px;
+  font-size: 23px;
 }
 
 .ntext1 {
   font-weight: 600;
-  font-size: 23px;
   margin-bottom: 10px;
 }
 
 .ntext2 {
   font-weight: 400;
-  font-size: 18px;
 }
 
 @media (max-width: 1200px) {
