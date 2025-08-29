@@ -183,6 +183,11 @@
 
   .project-name {
     font-size: 30px;
+    letter-spacing: -0.75px;
+  }
+
+  .student-name-wrapper {
+    margin-bottom: 10px;
   }
 
   .student-name {
@@ -296,7 +301,7 @@
   .desc-text-wrapper-detail {
     max-width: 350px;
     gap: 16px;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
   }
 
   .description-project {
@@ -306,6 +311,7 @@
 
   .project-name {
     font-size: 22px;
+    letter-spacing: -0.55px;
   }
 
   .student-name {
@@ -314,6 +320,7 @@
 
   .name-lower {
     margin-bottom: 30px;
+    font-size: 20px;
   }
 
   .student-info {

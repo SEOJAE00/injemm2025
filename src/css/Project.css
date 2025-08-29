@@ -184,6 +184,7 @@
 
   .project-page {
     max-width: 1200px;
+    padding: 48px 60px 0px 60px;
   }
 
   .project-grid {
@@ -192,6 +193,10 @@
 
   .subject {
     font-size: 30px;
+  }
+
+  .subject-en {
+    letter-spacing: -0.75px;
   }
 
   .prof {
@@ -214,6 +219,10 @@
 
   .card-wrapper > div {
     flex: 0 0 calc((100% - 3 * 30px) / 4);
+  }
+
+  .ntext2 {
+    font-size: 18px;
   }
 
 }
@@ -267,10 +276,22 @@
 
   .subject {
     font-size: 22px;
+    letter-spacing: -0.55px;
+  }
+
+  .subject-en {
+    margin-bottom: 30px;
+    letter-spacing: -0.5px !important;
+    font-size: 20px !important;
   }
 
   .prof {
-    font-size: 17px;
+    font-size: 18px;
+  }
+
+  .prof-en {
+    margin-bottom: 30px;
+    letter-spacing: -0.45px;
   }
 
   .desc-text-wrapper {
@@ -285,6 +306,7 @@
 
   .card-wrapper {
     gap: 40px 0;
+    margin-bottom: 14px;
   }
 
   .card-wrapper > div {
