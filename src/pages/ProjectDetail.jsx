@@ -82,6 +82,19 @@ export default function ProjectDetail() {
         })
       }
 
+      {/* 프로토파이 동영상 */}
+      <div className="youtube-wrapper">
+        <iframe
+          src={filteredData[0].youtubeLink}
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+          className='youtube-wrapper-iframe'
+        />
+      </div>
+
       <div className='btn-protopie-wrapper'>
         <a href={filteredData[0].protopieLink} target='blank'>
           <button className='btn-protopie'>프로토파이 연결 링크</button>
