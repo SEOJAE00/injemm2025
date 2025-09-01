@@ -1,0 +1,382 @@
+/* 기본: 모바일 퍼스트 (가장 작은 화면 기준) */
+.designer-detail-page {
+  width: 100%;
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 100px 20px 58px 20px; /* 기본 패딩 */
+  box-sizing: border-box;
+}
+
+.not-found {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.p-d-back {
+  position: fixed; /* 스크롤해도 계속 보이게 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: url('/img/d_back.png');
+  background-repeat: no-repeat;
+  background-position: right 124px top 137px;
+  margin-right: 100px;
+  background-size: auto; /* 화면에 꽉 채우기 */
+
+  z-index: -1; /* 다른 요소 뒤로 */
+}
+
+/* 헤더 영역 */
+.designer-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.detail-name-kr {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 45px;
+  margin-bottom: 10px;
+  letter-spacing: -0.95px;
+}
+
+.detail-name-en {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43px;
+  margin-bottom: 10px;
+  letter-spacing: -0.9px;
+}
+
+.detail-email {
+  font-size: 26px;
+  color: #0009FF;
+  line-height: 31px;
+  margin-bottom: 80px;
+  letter-spacing: -0.65px;
+}
+
+/* 작품 카드 영역 (기본: 1열, 폭 100%) */
+.works {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  justify-content: left;
+}
+
+.work-card {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 14px;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 0px;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.thumb-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 0px;
+  background: #e9edf2;
+}
+
+.thumb {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.work-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.work-kr {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 27px;
+  margin: 0px;
+  letter-spacing: -0.575px;
+}
+
+.work-en {
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 27px;
+  margin: 0 0 0px 0;
+  letter-spacing: -0.575px;
+}
+
+/* 390px 이하 - 카드 폭 350px 고정 */
+@media (max-width: 390px) {
+  .designer-detail-page {
+    padding: 0px 20px 14px 20px;
+  }
+  .works {
+    gap: 40px;
+    justify-content: center;
+  }
+  .work-card,
+  .thumb-wrap {
+    width: 100%;
+    max-width: 350px;
+  }
+   .detail-name-kr {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: -0.55px;
+  }
+  .detail-name-en {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+  }
+  .detail-email {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 30px;
+    letter-spacing: -0.45px;
+  }
+  .work-kr{
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 27px;
+    margin: 0px;
+    letter-spacing: -0.575px;
+  }
+  .work-en {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    letter-spacing: -0.45px;
+  }
+
+  .p-d-back {
+    display: none;
+  }
+}
+
+/* 600px 이하 (391~600) - 화면 폭 꽉 채우기 */
+@media (max-width: 600px) and (min-width: 391px) {
+  .works {
+    gap: 40px;
+    grid-template-columns: 1fr;
+  }
+  .work-card,
+  .thumb-wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+      .designer-detail-page {
+    padding: 0px 40px 14px 40px;
+  }
+   .detail-name-kr {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.75px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .detail-name-en {
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: -0.7px;
+  }
+  .detail-email {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 30px;
+    letter-spacing: -0.7px;
+  }
+  .work-kr{
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 27px;
+    margin: 0px;
+    letter-spacing: -0.575px;
+  }
+  .work-en {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    letter-spacing: -0.45px;
+  }
+  .p-d-back {
+    display: none;
+  }
+}
+
+/* 767px 이하 - 2열 */
+@media (max-width: 768px) and (min-width: 601px) {
+  .works {
+    gap: 34px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .work-card {
+    max-width: 327px;
+  }
+  .thumb-wrap {
+    max-width: 327px;
+  }
+    .designer-detail-page {
+    padding: 0px 40px 80px 40px;
+  }
+   .detail-name-kr {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.75px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .detail-name-en {
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: -0.7px;
+  }
+  .detail-email {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 160px;
+    letter-spacing: -0.7px;
+  }
+  .work-card {
+    gap: 15px;
+  }
+  .work-kr{
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 27px;
+    margin: 0px;
+    letter-spacing: -0.575px;
+  }
+  .work-en {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    letter-spacing: -0.45px;
+  }
+  .p-d-back {
+    display: none;
+  }
+}
+
+/* 1200px 이하 - 178px 카드 크기 */
+@media (max-width: 1200px) and (min-width: 769px) {
+  .designer-detail-page {
+    padding: 80px 60px 66px 60px;
+  }
+  .detail-name-kr {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.75px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .detail-name-en {
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: -0.7px;
+  }
+  .detail-email {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 80px;
+    letter-spacing: -0.7px;
+  }
+  .works {
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  }
+  .work-kr{
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 27px;
+    margin: 0px;
+    letter-spacing: -0.575px;
+  }
+  .work-en {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    letter-spacing: -0.45px;
+  }
+  .work-card {
+    max-width: 180px;
+  }
+  .thumb-wrap {
+    max-width: 180px;
+  }
+  .p-d-back {
+  position: fixed; /* 스크롤해도 계속 보이게 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: url('/img/d_back.png');
+  background-repeat: no-repeat;
+  background-position: right 82px top 162px;
+  background-size: 542px auto;
+
+  z-index: -1; /* 다른 요소 뒤로 */
+}
+  
+}
+
+/* 1919px 이하 - 335px 카드 크기 */
+@media (max-width: 1920px) and (min-width: 1201px) {
+  .designer-detail-page {
+    padding: 100px 60px 57px 60px;
+  }
+  .works {
+    gap: 31px;
+    grid-template-columns: repeat(auto-fit, minmax(335px, auto));
+  }
+  .work-card {
+    max-width: 335px;
+  }
+  .thumb-wrap {
+    max-width: 335px;
+  }
+  
+}
+
+/* 1920px 이상 */
+@media (min-width: 1921px) {
+  .designer-detail-page {
+    padding: 100px 60px 57px 60px;
+  }
+  .works {
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(335px, auto));
+  }
+  .work-card {
+    max-width: 335px;
+  }
+  .thumb-wrap {
+    max-width: 335px;
+  }
+}

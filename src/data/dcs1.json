@@ -1,0 +1,73 @@
+[
+  {
+    "nameKo" : ["서재", "조현"], 
+    "nameEn" : ["seo", "jo"],
+    "projectName" : "작품 표기 이름",
+    "projectNameKo" : "작품 표기 이름이 한글이면 영어, 영어면 한글",
+    "projectUrl" : "작품이름영어소문자,띄어쓰기X1",
+    "folderName" : "seo",
+    "email" : ["abcd1234@gmail.com", "efgh5678@gmail.com"],
+    "descriptionKo" : "\"무브\"는 은둔형 외톨이 생활을 하고 있지만, 실질적인 도움을 받기 어려워하거나 못 받고 있는 사람들을 위해 은둔형 외톨이 생활을 하는 사람들이 사회 활동을 하거나, 일상 유지에 대한 동기 부여를 받을 수 있도록 다양한 활동을 지원하는 AR 서비스입니다. 은둔 청년들의 대인 능력 회복, 경제적 지원, 다양한 사회 프로그램 참여에 대한 접근성을 높이고, 서로를 응원할 수 있는 엽서 서비스를 통해 대인관계 회복을 도울 수 있는 것을 목표로 합니다.",
+    "descriptionEn" : "Moov is an augmented reality (AR) service designed to support individuals living in social withdrawal, who often struggle to access practical help. The platform encourages users to engage in everyday activities and participate in social interactions by offering motivational and structured support. Moov provides access to various programs that promote the development of interpersonal skills, economic empowerment, and participation in community-based initiatives. In addition, the service features a postcard-based messaging system that fosters mutual encouragement and helps users restore confidence in social relationships.",
+    "youtubeLink" : "https://www.youtube.com/embed/rAn-AWXtHv0?si=lzRscBfI5jJhmmAi",
+    "protopieLink" : "https://www.protopie.io/",
+    "imageLength" : 10
+  },
+  {
+    "nameKo" : ["이준호"], 
+    "nameEn" : ["Junho Lee"],
+    "projectName" : "Sayfro",
+    "projectNameKo" : "세이프로",
+    "projectUrl" : "sayfro",
+    "folderName" : "seo",
+    "email" : ["abcd1234@gmail.com"],
+    "descriptionKo" : "작무브는 은둔형 외톨이 생활을 하고 있지만, 실질적인 도움을 받기 어려워하거나 못 받고 있는 사람들을 위해 은둔형 외톨이 생활을 하는 사람들이 사회 활동을 하거나, 일상 유지에 대한 동기 부여를 받을 수 있도록 다양한 활동을 지원하는 AR 서비스입니다. 은둔 청년들의 대인 능력 회복, 경제적 지원, 다양한 사회 프로그램 참여에 대한 접근성을 높이고, 서로를 응원할 수 있는 엽서 서비스를 통해 대인관계 회복을 도울 수 있는 것을 목표로 합니다.",
+    "descriptionEn" : "Moov is an augmented reality (AR) service designed to support individuals living in social withdrawal, who often struggle to access practical help. The platform encourages users to engage in everyday activities and participate in social interactions by offering motivational and structured support. Moov provides access to various programs that promote the development of interpersonal skills, economic empowerment, and participation in community-based initiatives. In addition, the service features a postcard-based messaging system that fosters mutual encouragement and helps users restore confidence in social relationships.",
+    "youtubeLink" : "https://www.youtube.com/embed/rAn-AWXtHv0?si=lzRscBfI5jJhmmAi",
+    "protopieLink" : "https://www.protopie.io/",
+    "imageLength" : 20
+  },
+  {
+    "nameKo" : ["학생 한글 이름3"], 
+    "nameEn" : ["Student En Name3"],
+    "projectName" : "작품 표기 이름3",
+    "projectNameKo" : "작품 표기 이름이 한글이면 영어, 영어면 한글",
+    "projectUrl" : "작품이름영어소문자,띄어쓰기X3",
+    "folderName" : "seo",
+    "email" : ["abcd1234@gmail.com"],
+    "descriptionKo" : "작무브는 은둔형 외톨이 생활을 하고 있지만, 실질적인 도움을 받기 어려워하거나 못 받고 있는 사람들을 위해 은둔형 외톨이 생활을 하는 사람들이 사회 활동을 하거나, 일상 유지에 대한 동기 부여를 받을 수 있도록 다양한 활동을 지원하는 AR 서비스입니다. 은둔 청년들의 대인 능력 회복, 경제적 지원, 다양한 사회 프로그램 참여에 대한 접근성을 높이고, 서로를 응원할 수 있는 엽서 서비스를 통해 대인관계 회복을 도울 수 있는 것을 목표로 합니다.",
+    "descriptionEn" : "Moov is an augmented reality (AR) service designed to support individuals living in social withdrawal, who often struggle to access practical help. The platform encourages users to engage in everyday activities and participate in social interactions by offering motivational and structured support. Moov provides access to various programs that promote the development of interpersonal skills, economic empowerment, and participation in community-based initiatives. In addition, the service features a postcard-based messaging system that fosters mutual encouragement and helps users restore confidence in social relationships.",
+    "youtubeLink" : "https://www.youtube.com/embed/rAn-AWXtHv0?si=lzRscBfI5jJhmmAi",
+    "protopieLink" : "https://www.protopie.io/",
+    "imageLength" : 20
+  },
+  {
+    "nameKo" : ["학생 한글 이름4"], 
+    "nameEn" : ["Student En Name4"],
+    "projectName" : "작품 표기 이름4",
+    "projectNameKo" : "작품 표기 이름이 한글이면 영어, 영어면 한글",
+    "projectUrl" : "작품이름영어소문자,띄어쓰기X4",
+    "folderName" : "seo",
+    "email" : ["abcd1234@gmail.com"],
+    "descriptionKo" : "작무브는 은둔형 외톨이 생활을 하고 있지만, 실질적인 도움을 받기 어려워하거나 못 받고 있는 사람들을 위해 은둔형 외톨이 생활을 하는 사람들이 사회 활동을 하거나, 일상 유지에 대한 동기 부여를 받을 수 있도록 다양한 활동을 지원하는 AR 서비스입니다. 은둔 청년들의 대인 능력 회복, 경제적 지원, 다양한 사회 프로그램 참여에 대한 접근성을 높이고, 서로를 응원할 수 있는 엽서 서비스를 통해 대인관계 회복을 도울 수 있는 것을 목표로 합니다.",
+    "descriptionEn" : "Moov is an augmented reality (AR) service designed to support individuals living in social withdrawal, who often struggle to access practical help. The platform encourages users to engage in everyday activities and participate in social interactions by offering motivational and structured support. Moov provides access to various programs that promote the development of interpersonal skills, economic empowerment, and participation in community-based initiatives. In addition, the service features a postcard-based messaging system that fosters mutual encouragement and helps users restore confidence in social relationships.",
+    "youtubeLink" : "https://www.youtube.com/embed/rAn-AWXtHv0?si=lzRscBfI5jJhmmAi",
+    "protopieLink" : "https://www.protopie.io/",
+    "imageLength" : 20
+  },
+  {
+    "nameKo" : ["학생 한글 이름5"], 
+    "nameEn" : ["Student En Name5"],
+    "projectName" : "작품 표기 이름5",
+    "projectNameKo" : "작품 표기 이름이 한글이면 영어, 영어면 한글",
+    "projectUrl" : "작품이름영어소문자,띄어쓰기X5",
+    "folderName" : "seo",
+    "email" : ["abcd1234@gmail.com"],
+    "descriptionKo" : "작무브는 은둔형 외톨이 생활을 하고 있지만, 실질적인 도움을 받기 어려워하거나 못 받고 있는 사람들을 위해 은둔형 외톨이 생활을 하는 사람들이 사회 활동을 하거나, 일상 유지에 대한 동기 부여를 받을 수 있도록 다양한 활동을 지원하는 AR 서비스입니다. 은둔 청년들의 대인 능력 회복, 경제적 지원, 다양한 사회 프로그램 참여에 대한 접근성을 높이고, 서로를 응원할 수 있는 엽서 서비스를 통해 대인관계 회복을 도울 수 있는 것을 목표로 합니다.",
+    "descriptionEn" : "Moov is an augmented reality (AR) service designed to support individuals living in social withdrawal, who often struggle to access practical help. The platform encourages users to engage in everyday activities and participate in social interactions by offering motivational and structured support. Moov provides access to various programs that promote the development of interpersonal skills, economic empowerment, and participation in community-based initiatives. In addition, the service features a postcard-based messaging system that fosters mutual encouragement and helps users restore confidence in social relationships.",
+    "youtubeLink" : "https://www.youtube.com/embed/rAn-AWXtHv0?si=lzRscBfI5jJhmmAi",
+    "protopieLink" : "https://www.protopie.io/",
+    "imageLength" : 20
+  }
+  
+]

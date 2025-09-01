@@ -1,0 +1,164 @@
+[
+  {
+    "name_kr": "강유진",
+    "name_en": "Yujin Kang",
+    "email": "yujinkang@example.com",
+    "work1_kr": "Moov",
+    "work1_en": "무브",
+    "work2_kr": "토독토독",
+    "work2_en": "Todok Todok"
+  },
+  {
+    "name_kr": "김가은",
+    "name_en": "Gaeun Kim",
+    "email": "gaeunkim@example.com",
+    "work1_kr": "PASTPORT",
+    "work1_en": "패스트포트",
+    "work2_kr": "PLEEVO",
+    "work2_en": "플리보"
+  },
+  {
+    "name_kr": "김석민",
+    "name_en": "Seokmin Kim",
+    "email": "seokminkim@example.com",
+    "work1_kr": "RECOMOS",
+    "work1_en": "리코모스",
+    "work2_kr": "Social Grow",
+    "work2_en": "소셜 그로우"
+  },
+  {
+    "name_kr": "김서희",
+    "name_en": "Seohee Kim",
+    "email": "seoheekim@example.com",
+    "work1_kr": "DOMNITY",
+    "work1_en": "돔니티",
+    "work2_kr": "PIXEE",
+    "work2_en": "픽시"
+  },
+  {
+    "name_kr": "김재연",
+    "name_en": "Jaeyeon Kim",
+    "email": "jaeyeonkim@example.com",
+    "work1_kr": "FLORET",
+    "work1_en": "플로레",
+    "work2_kr": "T:BLE",
+    "work2_en": "티블"
+  },
+  {
+    "name_kr": "박설진",
+    "name_en": "Seoljin Park",
+    "email": "seoljinpark@example.com",
+    "work1_kr": "DOMNITY",
+    "work1_en": "돔니티",
+    "work2_kr": "NUBI",
+    "work2_en": "누비"
+  },
+  {
+    "name_kr": "박소영",
+    "name_en": "Soyoung Park",
+    "email": "soyoungpark@example.com",
+    "work1_kr": "PIUM",
+    "work1_en": "피움",
+    "work2_kr": "Blockit",
+    "work2_en": "블록잇"
+  },
+  {
+    "name_kr": "박수경",
+    "name_en": "Sugeyeong Park",
+    "email": "sugeyeongpark@example.com",
+    "work1_kr": "AGRONIX",
+    "work1_en": "아그로닉스",
+    "work2_kr": "DEEP SHIELD",
+    "work2_en": "딥쉴드"
+  },
+  {
+    "name_kr": "박수린",
+    "name_en": "Surin Park",
+    "email": "surinpark@example.com",
+    "work1_kr": "wavon",
+    "work1_en": "웨이븐",
+    "work2_kr": "Play Ball",
+    "work2_en": "플레이볼"
+  },
+  {
+    "name_kr": "박수연",
+    "name_en": "Suyeon Park",
+    "email": "suyeonpark@example.com",
+    "work1_kr": "Dream Edit",
+    "work1_en": "드림 에디트",
+    "work2_kr": "Lunacare",
+    "work2_en": "루나케어"
+  },
+  {
+    "name_kr": "서재석",
+    "name_en": "Jaeseok Seo",
+    "email": "jaeseokseo@example.com",
+    "work1_kr": "UNIKO",
+    "work1_en": "유니코",
+    "work2_kr": "SPLORE",
+    "work2_en": "스플러"
+  },
+  {
+    "name_kr": "이시현",
+    "name_en": "Sihyun Lee",
+    "email": "sihyunlee@example.com",
+    "work1_kr": "Route8",
+    "work1_en": "루트8",
+    "work2_kr": "어딤",
+    "work2_en": "Adim"
+  },
+  {
+    "name_kr": "이준호",
+    "name_en": "Junho Lee",
+    "email": "junholee@example.com",
+    "work1_kr": "Sayfro",
+    "work1_en": "세이프로",
+    "work2_kr": "AIDEE",
+    "work2_en": "에이디"
+  },
+    {
+    "name_kr": "이지현",
+    "name_en": "Jihyun Lee",
+    "email": "jihyunlee@example.com",
+    "work1_kr": "Oairis",
+    "work1_en": "오아리스",
+    "work2_kr": "SPAVE",
+    "work2_en": "스페이브"
+  },
+  {
+    "name_kr": "정의헌",
+    "name_en": "Uiheon Jeong",
+    "email": "uiheonjeong@example.com",
+    "work1_kr": "PIUM",
+    "work1_en": "피움",
+    "work2_kr": "SpeakGo",
+    "work2_en": "스픽고"
+  },
+  {
+    "name_kr": "정유진",
+    "name_en": "Yujin Jeong",
+    "email": "yujinjeong@example.com",
+    "work1_kr": "petter",
+    "work1_en": "펫터",
+    "work2_kr": "늘봄",
+    "work2_en": "Neulbom"
+  },
+  {
+    "name_kr": "조현덕",
+    "name_en": "Hyeondeok Jo",
+    "email": "hyeondeokjo@example.com",
+    "work1_kr": "UNIKO",
+    "work1_en": "유니코",
+    "work2_kr": "TALIA",
+    "work2_en": "탈리아"
+  },
+  {
+    "name_kr": "최현정",
+    "name_en": "Hyunjung Choi",
+    "email": "hyunjungchoi@example.com",
+    "work1_kr": "Doitt",
+    "work1_en": "두잇",
+    "work2_kr": "Safeck",
+    "work2_en": "세이펙"
+  }
+]

@@ -1,0 +1,28 @@
+.grid-web-contnets {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.app_jsx_top {
+    padding-top: 86px;
+}
+@media (max-width: 1200px) {
+    .app_jsx_top {
+        padding-top: 86px;
+    }
+}
+@media (max-width: 768px) {
+    .app_jsx_top {
+        padding-top: 80px;
+    }
+}
+@media (max-width: 390px) {
+    .app_jsx_top {
+        padding-top: 70px;
+    }
+}

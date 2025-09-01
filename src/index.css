@@ -1,0 +1,26 @@
+@import 'pretendard/dist/web/static/pretendard.css';
+
+body {
+  margin: 0;
+  font-family: 'Pretendard', sans-serif;
+  overscroll-behavior: none;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+/* 크롬, 사파리, 엣지 */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* 파이어폭스 */
+html {
+  scrollbar-width: none; /* Firefox 전용 */
+}
+
+/* IE, Edge (옛 버전) */
+html {
+  -ms-overflow-style: none; 
+}
