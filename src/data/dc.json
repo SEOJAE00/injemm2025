@@ -9,7 +9,7 @@
     "email" : ["t.leejunho@gmail.com"],
     "descriptionKo" : "다양한 채널과 상황에서 시작되는 고객과의 대화, 관리하기 어렵지 않으셨나요?AIDEE는 나를 닮은 AI 아바타를 활용해 고객을 쉽고 효율적으로 관리할 수 있도록 돕는 AI 고객 관리 솔루션입니다. 언제 어디서든 고객과 자동으로 상담을 진행하고, 대화를 기록하며, 관계를 지속적으로 유지할 수 있도록 지원합니다.",
     "descriptionEn" : "Managing conversations with customers that start across various channels and situations —has it ever felt overwhelming? AIDEE is an AI-powered customer management solution that uses a personalized AI avatar to help you manage customers easily and efficiently. It automatically engages with customers anytime, anywhere, records conversations, and helps you maintain ongoing relationships with ease.",
-    "youtubeLink" : "https://www.youtube.com/embed/v0m9saFXcmA?autoplay=0&mute=1&rel=0&controls=0", 
+    "youtubeLink" : "https://www.youtube.com/embed/v0m9saFXcmA?autoplay=1&mute=1&rel=0&controls=1", 
     "protopieYoutubeLink" : "https://www.youtube.com/embed/fCLhnGIU3G4?autoplay=0&mute=1&rel=0&controls=0",
     "protopieLink" : "https://www.protopie.io/",
     "imageLength" : 19
@@ -140,7 +140,7 @@
     "projectName" : "Safeck",
     "projectNameKo" : "세이펙",
     "projectUrl" : "safeck",
-    "folderName" : "ChoiHyunJungn",
+    "folderName" : "ChoiHyunJung",
     "email" : ["xxhj3013@naver.com"],
     "descriptionKo" : "세이펙은 위험 요소를 대수롭지 않게 여기는 청소년들이 퀘스트, 미션, 대결과 같은 재미있는 활동을 통해 자연스럽게 안전수칙을 익히도록 돕는 청소년 안전불감증 예방 서비스입니다. AR 화면을 활용한 안전 귀가 기능과, 다양한 활동 참여로 획득한 포인트를 통한 보상 시스템으로 그들의 흥미와 자발적인 참여를 유도합니다.",
     "descriptionEn" : "Safeck is a youth safety insensitivity prevention service that helps teenagers who don't take risks seriously learn safety rules naturally through fun activities such as quests, missions, and confrontations. It induces their interest and voluntary participation with a safe return function using AR screens and a reward system through points earned through participation in various activities.",

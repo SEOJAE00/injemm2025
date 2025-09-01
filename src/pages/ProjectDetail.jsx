@@ -97,7 +97,7 @@ export default function ProjectDetail() {
       {/* 프로토파이 동영상 */}
       <div className="youtube-wrapper">
         <iframe
-          src={filteredData[0].youtubeLink}
+          src={filteredData[0].protopieYoutubeLink}
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
