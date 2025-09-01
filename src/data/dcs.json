@@ -9,7 +9,7 @@
     "email" : ["sugyeong2813@gmail.com"],
     "descriptionKo" : "AGRONIX는 화성 정착민의 자급자족을 위한 스마트 농업 관리 서비스입니다. 작물의 건강한 생장을 위해 필요한 온도, 습도, 조도 등의 환경 조건을 자동으로 관리하며, 사용자 참여를 유도하는 보상 시스템을 통해 정착민이 화성에서 안정적으로 자급자족하며 생존할 수 있도록 지원합니다.",
     "descriptionEn" : "AGRONIX is a smart farming management service designed to support self-sufficiency for settlers on Mars. It automatically controls key environmental conditions—such as temperature, humidity, and light intensity—to ensure healthy crop growth. Through a reward system that encourages user engagement, AGRONIX helps settlers survive and thrive independently in the challenging Martian environment.",
-    "youtubeLink" : "https://www.youtube.com/embed/GbbMfb50adk?autoplay=0&mute=1&rel=0&controls=0", 
+    "youtubeLink" : "https://www.youtube.com/embed/GbbMfb50adk?autoplay=1&mute=1&rel=0&controls=1", 
     "protopieYoutubeLink" : "https://www.youtube.com/embed/87cAyFKu63Q?autoplay=0&mute=1&rel=0&controls=0",
     "protopieLink" : "https://www.protopie.io/",
     "imageLength" : 25
@@ -24,7 +24,7 @@
     "email" : ["t.leejunho@gmail.com"],
     "descriptionKo" : "평범한 일상 속에서도 수많은 성범죄의 위협에 노출되어 살아갑니다. 세이프로는 두 개의 웨어러블 장치를 통해, 이러한 위험으로부터 나를 보호하고 신속하게 대응할 수 있도록 돕는 AI 기반 안심 앱입니다. 주변 상황을 실시간으로 감지하고, 위험을 기록하며, 즉각적인 알림을 통해 보다 안전하게 대처할 수 있도록 지원합니다.",
     "descriptionEn" : "Even in our ordinary daily lives, we are constantly exposed to the threat of sexual crimes. Sayfro is an AI-powered safety app that works with two wearable devices to help protect you from such dangers and enable swift responses. It detects and monitors your surroundings in real time, records potential threats, and provides instant alerts to help you respond quickly and stay safe.",
-    "youtubeLink" : "https://www.youtube.com/embed/-aRiLBlXa_A?autoplay=0&mute=1&rel=0&controls=0", 
+    "youtubeLink" : "https://www.youtube.com/embed/-aRiLBlXa_A?autoplay=1&mute=1&rel=0&controls=1", 
     "protopieYoutubeLink" : "https://www.youtube.com/embed/MJLSwNZvHLo?autoplay=0&mute=1&rel=0&controls=0",
     "protopieLink" : "https://www.protopie.io/",
     "imageLength" : 24
@@ -39,7 +39,7 @@
     "email" : ["abcd1234@gmail.com","efgh5678@gmail.com"],
     "descriptionKo" : "돔니티는 2080년 자급자족형 돔 도시 내에서 자원 재활용/에너지 순환/생활 데이터 분석을 통해 일상 루틴을 최적화하고 지속 가능한 생존 환경을 유지하도록 지원하는 스마트 라이프 매니지먼트 앱입니다.",
     "descriptionEn" : "Domnity is a smart life management app built for the year 2080, where humans reside in self-sustaining dome cities due to extreme air pollution. The app leverages data-driven algorithms to optimize daily routines, manage recycled resource usage, and maintain energy-efficient environments—ensuring sustainable living through real-time environmental and behavioral monitoring.",
-    "youtubeLink" : "https://www.youtube.com/embed/_fHuTTZSzNQ?autoplay=0&mute=1&rel=0&controls=0", 
+    "youtubeLink" : "https://www.youtube.com/embed/_fHuTTZSzNQ?autoplay=1&mute=1&rel=0&controls=1", 
     "protopieYoutubeLink" : "https://www.youtube.com/embed/CO2TN0BV8FI?autoplay=0&mute=1&rel=0&controls=0",
     "protopieLink" : "https://www.protopie.io/",
     "imageLength" : 20
@@ -47,14 +47,14 @@
     {
     "nameKo" : ["강유진"], 
     "nameEn" : ["Yujin Kang"],
-    "projectName" : "Moov",∂
+    "projectName" : "Moov",
     "projectNameKo" : "무브",
     "projectUrl" : "moov",
     "folderName" : "KangYuJin",
     "email" : ["yujinkang41@gmail.com"],
     "descriptionKo" : "무브는 은둔형 외톨이 생활을 하고 있지만, 실질적인 도움을 받기 어려워하거나 못 받고 있는 사람들을 위해 은둔형 외톨이 생활을 하는 사람들이 사회 활동을 하거나, 일상 유지에 대한 동기 부여를 받을 수 있도록 다양한 활동을 지원하는 AR 서비스입니다. 은둔 청년들의 대인 능력 회복, 경제적 지원, 다양한 사회 프로그램 참여에 대한 접근성을 높이고, 서로를 응원할 수 있는 엽서 서비스를 통해 대인관계 회복을 도울 수 있는 것을 목표로 합니다.",
     "descriptionEn" : "Moov is an augmented reality (AR) service designed to support individuals living in social withdrawal, who often struggle to access practical help. The platform encourages users to engage in everyday activities and participate in social interactions by offering motivational and structured support. Moov provides access to various programs that promote the development of interpersonal skills, economic empowerment, and participation in community-based initiatives. In addition, the service features a postcard-based messaging system that fosters mutual encouragement and helps users restore confidence in social relationships.",
-    "youtubeLink" : "https://www.youtube.com/embed/z2tUDNbMhl4?autoplay=0&mute=1&rel=0&controls=0", 
+    "youtubeLink" : "https://www.youtube.com/embed/z2tUDNbMhl4?autoplay=1&mute=1&rel=0&controls=1", 
     "protopieYoutubeLink" : "https://www.youtube.com/embed/1qw6KX8FigA?autoplay=0&mute=1&rel=0&controls=0",
     "protopieLink" : "https://www.protopie.io/",
     "imageLength" : 27
@@ -69,7 +69,7 @@
     "email" : ["oj042200@naver.com"],
     "descriptionKo" : "반려동물의 마음을 몰라 걱정된 적 있나요? Petter는 말하지 못하는 반려동물의 감정과 건강 신호를 해석해 보호자에게 전달하는 케어 서비스입니다. 작은 행동과 소리에 담긴 마음을 번역해, 보호자가 반려동물을 더 깊이 이해하고 건강한 일상을 함께할 수 있도록 돕습니다.",
     "descriptionEn" : "Have you ever worried because you couldn’t understand how your pet feels? Petter is a care service that interprets the emotions and health signals of pets who cannot speak, and delivers them to their guardians. By translating the meaning behind subtle behaviors and sounds, Petter helps you understand your pet on a deeper level and build a healthier daily life together.",
-    "youtubeLink" : "https://www.youtube.com/embed/OoRWf0F2dME?autoplay=0&mute=1&rel=0&controls=0", 
+    "youtubeLink" : "https://www.youtube.com/embed/OoRWf0F2dME?autoplay=1&mute=1&rel=0&controls=1", 
    "protopieYoutubeLink" : "https://www.youtube.com/embed/7bWpqW2j4os?autoplay=0&mute=1&rel=0&controls=0",
     "protopieLink" : "https://www.protopie.io/",
     "imageLength" : 22
@@ -84,7 +84,7 @@
     "email" : ["kka615789@gmail.com","chd12090@gmail.com"],
     "descriptionKo" : "외국인 유학생들의 발걸음이 한국으로 향하고 있습니다. 하지만 정말 궁금한 정보는 흩어져 있고, 유학 선배들의 경험은 쉽게 접하기 어렵습니다. 나와 같은 고민을 했던 사람들의 이야기가 필요할 때, 유니코가 함께합니다. 단순한 정보가 아닌, 생생한 경험과 진짜 이야기를 통해 한국 유학의 첫걸음을 의미 있게 만들어드립니다.",
     "descriptionEn" : "More and more international students are turning their dreams toward Korea. But the information they truly need is scattered, and real experiences from fellow students are hard to find. When you need stories from people who’ve faced the same questions, UNICO is here. We go beyond basic facts to share real voices and lived experiences helping you take your first step in Korea with meaning and confidence.",
-    "youtubeLink" : "https://www.youtube.com/embed/6I2Un8mUjpU?autoplay=0&mute=1&rel=0&controls=0", 
+    "youtubeLink" : "https://www.youtube.com/embed/6I2Un8mUjpU?autoplay=1&mute=1&rel=0&controls=1", 
     "protopieYoutubeLink" : "https://www.youtube.com/embed/jK9EwCiv_ZY?autoplay=0&mute=1&rel=0&controls=0",
     "protopieLink" : "https://www.protopie.io/",
     "imageLength" : 27
@@ -99,7 +99,7 @@
     "email" : ["peach446300@naver.com"],
     "descriptionKo" : "2107년, 기후 변화와 산업화로 인해 전 세계는 극심한 물 부족과 대기 오염에 시달리게 되며 공기를 수집해 물을 생성하여 사용하는 방식으로 생존을 이어갑니다. 캡슐 하우스의 환경 모드 조절과 물 생성 기능을 통해 원하는 공간에서 물을 사용하며 물 부족 문제를 해결하고 지속 가능한 환경을 목표로 합니다.",
     "descriptionEn" : "In the year 2107, due to climate change and industrialization, the world suffers from severe water shortages and air pollution. Humanity survives by collecting air and converting it into water. Through the environmental mode control and water generation functions of the capsule house, people can use water in their desired spaces, helping to address water scarcity and aiming for a sustainable environment.",
-    "youtubeLink" : "https://www.youtube.com/embed/4cakH3tUlTQ?autoplay=0&mute=1&rel=0&controls=0", 
+    "youtubeLink" : "https://www.youtube.com/embed/4cakH3tUlTQ?autoplay=1&mute=1&rel=0&controls=1", 
     "protopieYoutubeLink" : "https://www.youtube.com/embed/A-Q-2W8fkI8?autoplay=0&mute=1&rel=0&controls=0",
     "protopieLink" : "https://www.protopie.io/",
     "imageLength" : 26
@@ -114,7 +114,7 @@
     "email" : ["xxhj3013@naver.com"],
     "descriptionKo" : "두잇은 처음 덕질을 시작하거나 새로운 장르에 도전하는 K-문화 초보 팬들을 위한 덕질 친구 가이드 서비스입니다. AI 덕질친구와의 채팅과 가이드 지식 퀴즈를 통해 팬덤 문화를 쉽고 재미있게 이해할 수 있으며, 16가지 유형별 맞춤 콘텐츠 추천과 커뮤니티 기능 등 다양한 시스템으로 여러분의 즐거운 덕질을 응원합니다.",
     "descriptionEn" : "Doitt is a fandom friend guide service designed for beginners who are starting their first K-culture fandom or exploring a new genre. Through chatting with an AI fandom friend and fun guide quizzes, you can easily and enjoyably understand fandom culture. With personalized content recommendations based on 16 different fan types and various features like community functions, Doitt supports your exciting and enjoyable fandom journey.",
-    "youtubeLink" : "https://www.youtube.com/embed/hEFwwkjtPh0?autoplay=0&mute=1&rel=0&controls=0", 
+    "youtubeLink" : "https://www.youtube.com/embed/hEFwwkjtPh0?autoplay=1&mute=1&rel=0&controls=1", 
     "protopieYoutubeLink" : "https://www.youtube.com/embed/c8tLg8jfcyw?autoplay=0&mute=1&rel=0&controls=0",
     "protopieLink" : "https://www.protopie.io/",
     "imageLength" : 31
@@ -129,7 +129,7 @@
     "email" : ["gaeun2064@naver.com"],
     "descriptionKo" : "패스트포트는 다크투어리즘 기반의 디지털 아카이빙 플랫폼으로, 역사적 비극과 사회적 기억을 인터랙티브하게 탐색·기록·공유하며, 이용자의 문화적 통찰과 집단기억 형성을 촉진합니다.",
     "descriptionEn" : "PASTPORT is a dark tourism-based digital archiving platform that enables interactive exploration, documentation, and sharing of historical tragedies and collective memories. By integrating geolocation mapping, immersive media, and user-generated narratives, it fosters cultural insight and collective remembrance, transforming sites of historical trauma into meaningful spaces for reflection and dialogue.",
-    "youtubeLink" : "https://www.youtube.com/embed/ZRgJ3Ny9ZkU?autoplay=0&mute=1&rel=0&controls=0", 
+    "youtubeLink" : "https://www.youtube.com/embed/ZRgJ3Ny9ZkU?autoplay=1&mute=1&rel=0&controls=1", 
     "protopieYoutubeLink" : "https://www.youtube.com/embed/PzqXgIvwyAk?autoplay=0&mute=1&rel=0&controls=0",
     "protopieLink" : "https://www.protopie.io/",
     "imageLength" : 18
@@ -144,7 +144,7 @@
     "email" : ["psuyeon386@gmail.com"],
     "descriptionKo" : "드림에디트는 10대에서 40대까지 꿈을 자주 꾸는 사람들을 위해 사용자가 직접 꿈을 기록해 AI가 꿈의 감정, 테마, 패턴을 분석하고 자주 꾸는 꿈을 인식하여 회피/유도 전략을 제안하며 수면장애를 해결해주고 꿈을 시각화하여 나만의 컬러와 캐릭터로 확장하는 감정 기반 드림 인터페이스 플랫폼입니다.",
     "descriptionEn" : "DreamEdit is an emotion-based dream interface platform that allows users to record their dreams themselves for those who often dream from their teens to their 40s, analyze their dreams' emotions, themes and patterns, suggest avoidance/induction strategies by recognizing their frequent dreams, solve sleep disorders, visualize dreams, and expand them into their own colors and characters.",
-    "youtubeLink" : "https://www.youtube.com/embed/YzcgZSuXGFM?autoplay=0&mute=1&rel=0&controls=0", 
+    "youtubeLink" : "https://www.youtube.com/embed/YzcgZSuXGFM?autoplay=1&mute=1&rel=0&controls=1", 
     "protopieYoutubeLink" : "https://www.youtube.com/embed/_hqItEc3rc0?autoplay=0&mute=1&rel=0&controls=0",
     "protopieLink" : "https://www.protopie.io/",
     "imageLength" : 21
@@ -159,7 +159,7 @@
     "email" : ["justiceold7@gmail.com","okc1250@naver.com"],
     "descriptionKo" : "피움은 사용자가 나만의 생태계를 직접 꾸미고 그 변화를 관찰할 수 있는 가상 비바리움 앱입니다. 온도, 습도, 조도 등 다양한 환경 요소를 조절하며 생태계를 서서히 변화시킬 수 있습니다. 이처럼 작은 변화를 주는 과정을 통해 자연을 돌보는 즐거움과 잔잔한 여유를 느끼며 자연에 대한 관심과 생태에 대한 이해도 함께 쌓을 수 있도록 합니다.",
     "descriptionEn" : "PIUM is a virtual vivarium app that allows users to create and observe changes in their own ecosystem. By adjusting various environmental factors such as temperature, humidity, and light, users can gradually transform their ecosystem. Through the process of making small changes, users can find joy in caring for their ecosystem, experience a sense of calm, and cultivate both an interest in the natural world and a deeper understanding of ecology.",
-    "youtubeLink" : "https://www.youtube.com/embed/KsfVkIVQu2s?autoplay=0&mute=1&rel=0&controls=0", 
+    "youtubeLink" : "https://www.youtube.com/embed/KsfVkIVQu2s?autoplay=1&mute=1&rel=0&controls=1", 
     "protopieYoutubeLink" : "https://www.youtube.com/embed/QvveozZ7Lek?autoplay=0&mute=1&rel=0&controls=0",
     "protopieLink" : "https://www.protopie.io/",
     "imageLength" : 26
@@ -174,7 +174,7 @@
     "email" : ["surin0228@naver.com"],
     "descriptionKo" : "\"Wavon(웨이븐)\"은 선박 등록, 탑승자 관리, 실시간 모니터링이 가능한 안전한 해상 관리 앱입니다. 긴급 상황 자동 대응으로 신속한 조치를 지원하며,가족과 선박 정보를 공유할 수 있습니다. 또한, 실시간 해상 상황과 기상 정보를 제공해 안전하고 효율적인 항해를 돕습니다.",
     "descriptionEn" : "\"Wavon(웨이븐)\" is a secure maritime management app that enables ship registration, occupant management, and real-time monitoring. It supports quick action with automatic emergency response and can share ship information with family members. It also helps with safe and efficient navigation by providing real-time maritime situation and weather information.helps settlers survive and thrive independently in the challenging Martian environment.",
-    "youtubeLink" : "https://www.youtube.com/embed/THbSDFNxxSA?autoplay=0&mute=1&rel=0&controls=0", 
+    "youtubeLink" : "https://www.youtube.com/embed/THbSDFNxxSA?autoplay=1&mute=1&rel=0&controls=1", 
     "protopieYoutubeLink" : "https://www.youtube.com/embed/wEm7bq7JkhY?autoplay=0&mute=1&rel=0&controls=0",
     "protopieLink" : "https://www.protopie.io/",
     "imageLength" : 28
@@ -189,7 +189,7 @@
     "email" : ["kimseokminkim@gmail.com"],
     "descriptionKo" : "우리는 살아가면서 수많은 선택의 기로에 서게 됩니다. 때로는 그 선택을 후회하거나, 만약 다른 선택을 했다면 지금과는 어떤 모습일지 궁금해지곤 합니다. 이 서비스는 2100년을 배경으로, 사용자의 과거 기억을 바탕으로 평행우주를 체험할 수 있도록 설계된 흥미로운 경험형 플랫폼입니다.",
     "descriptionEn" : "In life, we often find ourselves standing at countless crossroads.Sometimes, we regret the choices we've made or wonder what our lives might have looked like if we had chosen differently. This service is an engaging experiential platform set in the year 2100, designed to let users explore parallel universes based on their past memories.",
-    "youtubeLink" : "https://www.youtube.com/embed/G4W-X0mGwDk?autoplay=0&mute=1&rel=0&controls=0", 
+    "youtubeLink" : "https://www.youtube.com/embed/G4W-X0mGwDk?autoplay=1&mute=1&rel=0&controls=1", 
    "protopieYoutubeLink" : "https://www.youtube.com/embed/8Rlp1NI6_fQ?autoplay=0&mute=1&rel=0&controls=0",
     "protopieLink" : "https://www.protopie.io/",
     "imageLength" : 26
@@ -204,7 +204,7 @@
     "email" : ["wodusjae@naver.com"],
     "descriptionKo" : "플로레는 강사의 수업 운영 부담과 수강생의 개별 피드백 부족 문제를 해결하기 위한 발레 수업 매니지먼트 앱입니다. AI 기반 분석과 음성 비서를 통해 수업 준비를 간소화하고, 수강생의 발전 상태를 추적할 수 있도록 돕습니다. 효율적이고 몰입도 높은 수업 환경을 제공합니다.",
     "descriptionEn" : "FLORET solves the challenges of managing ballet classes and providing individualized feedback. With AI-powered lesson planning, voice assistant support, and performance tracking tools, the app reduces the burden on instructors while offering students clear insights into their progress. FLORET creates a more efficient, data-driven, and engaging environment for ballet education.",
-    "youtubeLink" : "https://www.youtube.com/embed/PNd8vfeu_VA?autoplay=0&mute=1&rel=0&controls=0", 
+    "youtubeLink" : "https://www.youtube.com/embed/PNd8vfeu_VA?autoplay=1&mute=1&rel=0&controls=1", 
     "protopieYoutubeLink" : "https://www.youtube.com/embed/AiVN684UBCE?autoplay=0&mute=1&rel=0&controls=0",
     "protopieLink" : "https://www.protopie.io/",
     "imageLength" : 20
@@ -219,7 +219,7 @@
     "email" : ["plazma61@naver.com"],
     "descriptionKo" : "우리는 우리의 상태를 망각하고 떄때로 잘못된 결정을 내리기도 합니다. 또한 언제나 자극에 노출된 환경에서 살고있는 우리에게 잘못된 결정을 내릴수 있는 순간들이 지나칩니다. 루트8은 근미래적 기술로 두뇌를 진단, 올바른 결정을 내리는것에 큰 도움이 되어 지금 당장의 만족감을 넘어 장기적인 만족도를 올려주고 결정한것에 대해 후회하는 빈도를 줄여줄것입니다.",
     "descriptionEn" : "We often forget our own state and sometimes make wrong decisions. In a world where we are constantly exposed to stimuli, moments when we could make the wrong choice are always passing by. Route8, with its near-future technology, diagnoses the brain and greatly aids in making the right decisions. It goes beyond providing immediate satisfaction, enhancing long-term fulfillment, and reducing the frequency of regretting the choices we make.",
-    "youtubeLink" : "https://www.youtube.com/embed/yRFg6TydS7A?autoplay=0&mute=1&rel=0&controls=0", 
+    "youtubeLink" : "https://www.youtube.com/embed/yRFg6TydS7A?autoplay=1&mute=1&rel=0&controls=1", 
    "protopieYoutubeLink" : "https://www.youtube.com/embed/joYflFhxfUQ?autoplay=0&mute=1&rel=0&controls=0",
     "protopieLink" : "https://www.protopie.io/",
     "imageLength" : 23

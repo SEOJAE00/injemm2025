@@ -74,14 +74,15 @@ export default function ProjectDetail() {
       </div>
 
       <div className="youtube-wrapper">
-        <iframe
-          src={filteredData[0].youtubeLink}
-          title="YouTube video player"
-          allow="autoplay; encrypted-media; picture-in-picture"
-          referrerPolicy="strict-origin-when-cross-origin"
-          className='youtube-wrapper-iframe'
-        />
-      </div>
+      <iframe
+        src={filteredData[0].youtubeLink}
+        title="YouTube video player"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowFullScreen
+        referrerPolicy="strict-origin-when-cross-origin"
+        className='youtube-wrapper-iframe'
+      />
+    </div>
 
       {
         Array.from({ length: filteredData[0].imageLength }).map((a, i)=>{
