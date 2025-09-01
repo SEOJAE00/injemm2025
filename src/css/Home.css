@@ -127,10 +127,11 @@ main {
 
 .top-right-video {
   position: fixed;
-  top: 54px;
+  top: 30px;
   right: 140px;
   width: 100%;
-  max-width: 1000px;
+  height: auto;
+  max-width: 1020px;
   border-radius: 12px;
   overflow: hidden;
 }
@@ -140,9 +141,14 @@ main {
   width: 100%;
   height: 100%;       /* 높이를 100%로 */
   object-fit: contain; /* 화면 비율에 맞춰 비디오 전체 표시 */
-  margin-left: -2px;  /* 좌측 잘라내기 */
+  margin-left: -2px; 
+   /* 좌측 잘라내기 */
 }
-
+@media (max-width: 1750px) {
+  .top-right-video {
+    right: 6%;
+  }
+}
 @media (max-width: 1200px) {
   .top-right-video {
   position: fixed;
@@ -156,27 +162,55 @@ main {
 }
 
 @media (max-width: 768px) {
-      .top-right-video {
-        position: absolute;
-        top: 244px;
-        right: 32px;
-        width: 768px;
-        max-width: 100%;
-        height: auto;
-        border-radius: 12px;
-        overflow: hidden;
-         display: flex;
-    justify-content: center; /* 가로 중앙 */
-    }
+  .top-right-video {
+    position: absolute;
+    bottom: 0;           
+    left: 50%;           
+    transform: translateX(-50%); 
+    width: 100%;         
+    max-width: 768px;    
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
 
-      .top-right-video video {
-        display: block;
-        width: calc(390px + (877 - 390) * ((100vw - 390px) / (768 - 390)));
-        position: fixed;
-        left: -32px;
-        height: auto;
-        object-fit: cover;
-    }
+  .top-right-video video {
+    display: block;
+    width: 107%;         /* 부모보다 10% 넓게 */
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    bottom: -100px;       
+    left: 57%;
+    transform: translateX(-50%); /* 중앙 기준 확대 */
+  }
+}
 
-    
+
+@media (max-width: 390px) {
+  .top-right-video {
+    position: absolute;
+    bottom: 0;           
+    left: 50%;           
+    transform: translateX(-50%); 
+    width: 100%;         
+    max-width: 390px;    
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    display: block;
+  }
+
+.top-right-video video {
+  width: 118%;          /* 화면의 80% 크기로 줄임 */
+      /* 390px 기준에서 줄어든 크기 */
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  bottom:0px;;
+  left: 54%;
+  transform: translateX(-50%);
+}
 }
