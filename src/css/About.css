@@ -461,8 +461,8 @@
   align-items: center;
   width: 100%;
   background-color: #e4eef9;
-  border-radius: 4px;
   overflow: hidden;
+  border-radius: 0px;
   font-size: clamp(16px, 1.1vw, 20px);
   color: #202020;
   padding: 22px 0px;
