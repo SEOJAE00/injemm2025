@@ -8,7 +8,7 @@ function ProjectCard() {
 
   let navigate = useNavigate();
   let menu = useOutletContext();
-  let useData = menu === 'digitalcontentsstudio' ? dcsData : dcData;
+  let useData = menu === 'dcstudio' ? dcsData : dcData;
 
   const [loaded, setLoaded] = useState(false);
 
@@ -24,7 +24,7 @@ function ProjectCard() {
       description: ["DC(Digital Contents) 졸업연구는 학생들이 4년간의 수업과 과제를 통해 성장한 결과물을 선보이는 모바일 앱 중심의 디지털 콘텐츠 프로젝트입니다. 미래지향적 기술과 차별화된 관점, 창의적인 아이디어를 담아 다양한 주제의 사용자 경험 디자인을 통해 참신한 디지털 경험을 제안합니다.", "DC (Digital Contents) Graduation Research is a digital content project focused on mobile applications, showcasing students' creative outcomes developed through four years of structured coursework and assignments. This project introduces fresh digital experiences through user experience (UX) design, incorporating innovative ideas, distinctive perspectives, and future-oriented technologies. By exploring diverse themes and creative approaches, students deliver the content that highlights the possibilities of digital media."] 
     }
   ];
-  let useAboutData = menu === 'digitalcontentsstudio' ? aboutData[0] : aboutData[1];
+  let useAboutData = menu === 'dcstudio' ? aboutData[0] : aboutData[1];
 
 
   return (

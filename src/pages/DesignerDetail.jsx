@@ -63,13 +63,13 @@ export default function DesignerDetail() {
     // dc.json 검색
     const dcMatch = dcData.find((item) => item.projectName === clickedValue);
     if (dcMatch) {
-      navigate(`/project/degreeprojectindcdesign/${dcMatch.projectUrl}`);
+      navigate(`/project/dcdesign/${dcMatch.projectUrl}`);
       return;
     }
     // dcs.json 검색
     const dcsMatch = dcsData.find((item) => item.projectName === clickedValue);
     if (dcsMatch) {
-      navigate(`/project/digitalcontentsstudio/${dcsMatch.projectUrl}`);
+      navigate(`/project/dcstudio/${dcsMatch.projectUrl}`);
       return;
     }
     alert("해당 프로젝트를 찾을 수 없습니다.");

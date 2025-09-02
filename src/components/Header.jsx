@@ -93,7 +93,7 @@ const Header = () => {
         <nav className="nav-links">
           <div className="nav-link-wrapper">
             <NavLink
-              to="/about/unfoldtheflow"
+              to="/about/unfold"
               className={`nav-link ${activeMenu === "about" ? "active" : ""}`}
               onClick={() => setActiveMenu("about")}
             >
@@ -102,7 +102,7 @@ const Header = () => {
           </div>
           <div className="nav-link-wrapper">
             <NavLink
-              to="/project/digitalcontentsstudio"
+              to="/project/dcstudio"
               className={`nav-link ${activeMenu === "project" ? "active" : ""}`}
               onClick={() => setActiveMenu("project")}
             >
@@ -164,10 +164,10 @@ const Header = () => {
             </button>
             {openSubMenu === "about" && (
               <ul className="sub-menu">
-                <li onClick={() => handleSubMenuClick("/about/unfoldtheflow")}>여정의 전개</li>
-                <li onClick={() => handleSubMenuClick("/about/visualidentity")}>비주얼 그래픽</li>
-                <li onClick={() => handleSubMenuClick("/about/digitalcontentsmajor")}>디지털콘텐츠 전공</li>
-                <li onClick={() => handleSubMenuClick("/about/preparatorycommittee")}>졸업준비 위원회</li>
+                <li onClick={() => handleSubMenuClick("/about/unfold")}>여정의 전개</li>
+                <li onClick={() => handleSubMenuClick("/about/vi")}>비주얼 그래픽</li>
+                <li onClick={() => handleSubMenuClick("/about/dcmajor")}>디지털콘텐츠 전공</li>
+                <li onClick={() => handleSubMenuClick("/about/precom")}>졸업준비 위원회</li>
               </ul>
             )}
           </li>
@@ -181,8 +181,8 @@ const Header = () => {
             </button>
             {openSubMenu === "project" && (
               <ul className="sub-menu">
-                <li onClick={() => handleSubMenuClick("/project/digitalcontentsstudio")}>디지털컨텐츠스튜디오</li>
-                <li onClick={() => handleSubMenuClick("/project/degreeprojectindcdesign")}>DC 졸업연구</li>
+                <li onClick={() => handleSubMenuClick("/project/dcstudio")}>디지털컨텐츠스튜디오</li>
+                <li onClick={() => handleSubMenuClick("/project/dcdesign")}>DC 졸업연구</li>
               </ul>
             )}
           </li>

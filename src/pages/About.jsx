@@ -8,10 +8,10 @@ export default function About() {
   let { menu } = useParams();
 
   const tabs = [
-    { id: "unfoldtheflow", title: "여정의 전개", subtitle: "UNFOLD THE FLOW" },
-    { id: "visualidentity", title: "비주얼 아이덴티티", subtitle: "Visual Identity" },
-    { id: "digitalcontentsmajor", title: "디지털콘텐츠 전공", subtitle: "Digital Contents Major" },
-    { id: "preparatorycommittee", title: "졸업준비 위원회", subtitle: "Preparatory Committee" },
+    { id: "unfold", title: "여정의 전개", subtitle: "UNFOLD THE FLOW" },
+    { id: "vi", title: "비주얼 아이덴티티", subtitle: "Visual Identity" },
+    { id: "dcmajor", title: "디지털콘텐츠 전공", subtitle: "Digital Contents Major" },
+    { id: "precom", title: "졸업준비 위원회", subtitle: "Preparatory Committee" },
   ];
 
   // 버튼 액티브 상태변경

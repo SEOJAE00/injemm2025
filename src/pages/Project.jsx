@@ -10,8 +10,8 @@ export default function Project() {
   let navigate = useNavigate();
 
   const tabs = [
-    { id: "digitalcontentsstudio", title: "디지털콘텐츠스튜디오", subtitle: "Digital Contents Studio" },
-    { id: "degreeprojectindcdesign", title: "DC 졸업연구", subtitle: "Degree Project in DC Design" },
+    { id: "dcstudio", title: "디지털콘텐츠스튜디오", subtitle: "Digital Contents Studio" },
+    { id: "degree", title: "DC 졸업연구", subtitle: "Degree Project in DC Design" },
   ];
 
   // 버튼 액티브 상태변경

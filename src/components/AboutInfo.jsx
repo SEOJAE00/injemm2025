@@ -8,7 +8,7 @@ function Aboutinfo() {
   let menu = useOutletContext()
   let filteredData = aboutData.filter(item => item.path === menu);
 
-  if(menu == "preparatorycommittee"){
+  if(menu == "precom"){
     return (
       <>
         <div className="text-wrapper">{filteredData[0].menuKo}</div>
@@ -34,7 +34,7 @@ function Aboutinfo() {
         </div>
       </>
     )
-  } else if(menu == "visualidentity") {
+  } else if(menu == "vi") {
     return (
       <>
         <div className="text-wrapper">{filteredData[0].menuKo}</div>

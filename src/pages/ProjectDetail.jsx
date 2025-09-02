@@ -10,10 +10,10 @@ export default function ProjectDetail() {
   let {menu, detail} = useParams();
   let navigate = useNavigate();
 
-  let useData = menu === 'digitalcontentsstudio' ? dcsData : dcData;
+  let useData = menu === 'dcstudio' ? dcsData : dcData;
   let filteredData = useData.filter(item => item.projectUrl === detail);
   let filteredDataIndex = useData.findIndex(item => item.projectUrl === detail);
-  let imgPath = menu === 'digitalcontentsstudio' ? "Digital_Contents_Studio_Chon" : "Degree_Project_in_DC_Design_Ryou";
+  let imgPath = menu === 'dcstudio' ? "Digital_Contents_Studio_Chon" : "Degree_Project_in_DC_Design_Ryou";
 
   let prevIndex = filteredDataIndex === 0 ? useData.length - 1 : filteredDataIndex - 1;
   let nextIndex = filteredDataIndex === useData.length - 1 ? 0 : filteredDataIndex + 1;
@@ -23,10 +23,10 @@ export default function ProjectDetail() {
   let [backBtn, setBackBtn] = useState('');
 
   useEffect(()=>{
-    if(menu === 'digitalcontentsstudio'){
-      setBackBtn("/project/digitalcontentsstudio")
-    } else if(menu === "degreeprojectindcdesign"){
-      setBackBtn("/project/degreeprojectindcdesign")
+    if(menu === 'dcstudio'){
+      setBackBtn("/project/dcstudio")
+    } else if(menu === "dcdesign"){
+      setBackBtn("/project/dcdesign")
     }
   }, [])
 
