@@ -146,7 +146,9 @@ main {
 
 @media (max-width: 1750px) {
   .top-right-video {
-    right: 6%;
+    right: 1%;
+    width: 57%;
+    top: auto;
   }
 }
 @media (max-width: 1200px) {
