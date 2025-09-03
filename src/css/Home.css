@@ -128,7 +128,7 @@ main {
 .top-right-video {
   position: fixed;
   top: 30px;
-  right: 140px;
+  right: 133px;
   width: 100%;
   max-width: 1020px;
   border-radius: 12px;
@@ -154,10 +154,10 @@ main {
 @media (max-width: 1200px) {
   .top-right-video {
   position: fixed;
-  top: 118px;       /* 상단 위치 (원하는 값으로 수정) */
+  top: 105px;       /* 상단 위치 (원하는 값으로 수정) */
   right: 75px;     /* 우측 위치 (원하는 값으로 수정) */
   width: 100%;
-  max-width: 700px;  /* 비디오 가로 크기 */
+  max-width: 710px;  /* 비디오 가로 크기 */
   border-radius: 12px;
   overflow: hidden;
 }
@@ -180,11 +180,11 @@ main {
 
   .top-right-video img {
     display: block;
-    width: 107%;         /* 부모보다 10% 넓게 */
+    width: 114%;         /* 부모보다 10% 넓게 */
     height: auto;
     object-fit: cover;
     position: relative;
-    bottom: -100px;       
+    bottom: -102px;       
     left: 57%;
     transform: translateX(-50%); /* 중앙 기준 확대 */
   }
