@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover; /* 화면 비율에 맞춰 꽉 채우기 */
   background-position: center top; /* 위쪽 기준으로 고정 */
-  background-color: #0009ff;
+  background-color: #0007fd; /* #0009ff; */
   
 }
 
@@ -130,20 +130,20 @@ main {
   top: 30px;
   right: 140px;
   width: 100%;
-  height: auto;
   max-width: 1020px;
   border-radius: 12px;
   overflow: hidden;
 }
 
-.top-right-video video {
+.top-right-video img {
   display: block;
   width: 100%;
-  height: 100%;       /* 높이를 100%로 */
-  object-fit: contain; /* 화면 비율에 맞춰 비디오 전체 표시 */
-  margin-left: -2px; 
-   /* 좌측 잘라내기 */
+  height: 100%;
+  object-fit: cover;             /* 화면 비율 맞춤 */
+  clip-path: inset(6px 6px 6px 3.6px); /* top, right, bottom, left */
+  transform: translateX(3px);   /* 오른쪽으로 밀기 */
 }
+
 @media (max-width: 1750px) {
   .top-right-video {
     right: 6%;
@@ -176,7 +176,7 @@ main {
     justify-content: center;
   }
 
-  .top-right-video video {
+  .top-right-video img {
     display: block;
     width: 107%;         /* 부모보다 10% 넓게 */
     height: auto;
@@ -203,7 +203,7 @@ main {
     display: block;
   }
 
-.top-right-video video {
+.top-right-video img {
   width: 118%;          /* 화면의 80% 크기로 줄임 */
       /* 390px 기준에서 줄어든 크기 */
   height: auto;
@@ -213,4 +213,10 @@ main {
   left: 54%;
   transform: translateX(-50%);
 }
+}
+video {
+  display: block;   /* inline 기본 속성 제거 */
+  margin: 0;
+  border: none;
+  outline: none;
 }

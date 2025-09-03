@@ -14,18 +14,11 @@ export default function Home() {
 
   return (
     <div className="Home-page">
-      {/* 상단-우측 고정 영상 */}
+      {/* 상단-우측 고정 GIF */}
       <div className="top-right-video">
-        <video
-          src="/img/main_motion.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          controls={false}
-          controlsList="nodownload noplaybackrate nofullscreen"
-          disablePictureInPicture
+        <img
+          src="/img/main_motion.gif"
+          alt="Main Motion"
         />
       </div>
 
@@ -37,6 +30,7 @@ export default function Home() {
           2025 Graduation Exhibition
         </p>
       </div>
+
       <div className="Home-sub">
         <h2 className="sub-title">여정의 전개</h2>
       </div>
