@@ -146,56 +146,75 @@ const Header = () => {
         </button>
 
         <ul className="main-menu-ul">
-          <li>
-            <button
-              onClick={() => handleMenuClick("home", false)}
-              className="mobile-main-link"
-            >
-              HOME
-            </button>
-          </li>
+       <li>
+  <button
+    onClick={() => handleMenuClick("home", false)}
+    className={`mobile-main-link ${
+      !openSubMenu && activeMenu === "home" ? "active-menu" : ""
+    }`}
+  >
+    HOME
+  </button>
+</li>
 
-          <li>
-            <button
-              onClick={() => handleMenuClick("about", true)}
-              className={`mobile-main-link ${openSubMenu === "about" ? "active" : ""}`}
-            >
-              ABOUT
-            </button>
-            {openSubMenu === "about" && (
-              <ul className="sub-menu">
-                <li onClick={() => handleSubMenuClick("/about/unfold")}>여정의 전개</li>
-                <li onClick={() => handleSubMenuClick("/about/vi")}>비주얼 그래픽</li>
-                <li onClick={() => handleSubMenuClick("/about/dcmajor")}>디지털콘텐츠 전공</li>
-                <li onClick={() => handleSubMenuClick("/about/precom")}>졸업준비 위원회</li>
-              </ul>
-            )}
-          </li>
+<li>
+  <button
+    onClick={() => handleMenuClick("about", true)}
+    className={`mobile-main-link ${
+      openSubMenu === "about"
+        ? "open-submenu"
+        : !openSubMenu && activeMenu === "about"
+        ? "active-menu"
+        : ""
+    }`}
+  >
+    ABOUT
+  </button>
+  {openSubMenu === "about" && (
+    <ul className="sub-menu">
+      <li onClick={() => handleSubMenuClick("/about/unfold")}>여정의 전개</li>
+      <li onClick={() => handleSubMenuClick("/about/vi")}>비주얼 그래픽</li>
+      <li onClick={() => handleSubMenuClick("/about/dcmajor")}>디지털콘텐츠 전공</li>
+      <li onClick={() => handleSubMenuClick("/about/precom")}>졸업준비 위원회</li>
+    </ul>
+  )}
+</li>
 
-          <li>
-            <button
-              onClick={() => handleMenuClick("project", true)}
-              className={`mobile-main-link ${openSubMenu === "project" ? "active" : ""}`}
-            >
-              PROJECT
-            </button>
-            {openSubMenu === "project" && (
-              <ul className="sub-menu">
-                <li onClick={() => handleSubMenuClick("/project/dcstudio")}>디지털컨텐츠스튜디오</li>
-                <li onClick={() => handleSubMenuClick("/project/dcdesign")}>DC 졸업연구</li>
-              </ul>
-            )}
-          </li>
+<li>
+  <button
+    onClick={() => handleMenuClick("project", true)}
+    className={`mobile-main-link ${
+      openSubMenu === "project"
+        ? "open-submenu"
+        : !openSubMenu && activeMenu === "project"
+        ? "active-menu"
+        : ""
+    }`}
+  >
+    PROJECT
+  </button>
+  {openSubMenu === "project" && (
+    <ul className="sub-menu">
+      <li onClick={() => handleSubMenuClick("/project/dcstudio")}>디지털컨텐츠스튜디오</li>
+      <li onClick={() => handleSubMenuClick("/project/dcdesign")}>DC 졸업연구</li>
+    </ul>
+  )}
+</li>
 
-          <li>
-            <button
-              onClick={() => handleMenuClick("designer", false)}
-              className="mobile-main-link"
-            >
-              DESIGNER
-            </button>
-          </li>
+<li>
+  <button
+    onClick={() => handleMenuClick("designer", false)}
+    className={`mobile-main-link ${
+      !openSubMenu && activeMenu === "designer" ? "active-menu" : ""
+    }`}
+  >
+    DESIGNER
+  </button>
+</li>
+
+
         </ul>
+
       </nav>
     </>
   );

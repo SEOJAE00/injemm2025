@@ -180,16 +180,27 @@
   letter-spacing: -0.8px;
   padding: 0px;
 }
-.mobile-main-link.active {
-    font-weight: 600; 
-  background-color: #ffd000;
-  color: #0009ff;
-  margin-bottom: 34px;  /* ← 원래 간격 유지 (34px → 50px) */
-  padding: 4px 22px; 
-  margin-top: -4px;  
-  line-height: 37px;/* ← 주황 배경이 위아래로 4px 확장되면서 시각적으로 46px처럼 보임 */
+
+.mobile-main-link.open-submenu {
+    font-weight: 600;
+    background-color: #ffd000;
+    color: #0009ff;
+    margin-bottom: 34px;
+    padding: 4px 22px;
+    margin-top: -4px;
+    line-height: 37px;
 }
 
+/* activeMenu 상태일 때 */
+.mobile-main-link.active-menu {
+    font-weight: 600;
+    background-color: #ffd000;
+    color: #0009ff;
+    margin-bottom: 46px;
+    padding: 4px 22px;
+    margin-top: -4px;
+    line-height: 37px;
+}
 
 .sub-menu {
   list-style: none;
