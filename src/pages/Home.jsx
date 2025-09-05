@@ -16,11 +16,15 @@ export default function Home() {
     <div className="Home-page">
       {/* 상단-우측 고정 GIF */}
       <div className="top-right-video">
+        <video src="/img/main_motion4.mp4" autoPlay muted loop playsInline preload="auto"
+        controls={false} controlsList="nodownload noplaybackrate nofullscreen"
+        disablePictureInPicture /> </div>
+      {/* <div className="top-right-video">
         <img
           src="/img/main_motion.gif"
           alt="Main Motion"
         />
-      </div>
+      </div>*/}
 
       <div className="hero-content">
         <p className="description">

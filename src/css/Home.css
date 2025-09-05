@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover; /* 화면 비율에 맞춰 꽉 채우기 */
   background-position: center top; /* 위쪽 기준으로 고정 */
-  background-color: #0007fd; /* #0009ff; */
+  background-color: #0009ff;/* #0009ff; #0007fd*/
   
 }
 
@@ -24,20 +24,25 @@ main {
   position: relative;
   padding: 0 80px;
 }
-
 .sub-title {
-  /* 메인 타이틀 58/B/행간69 */
   position: fixed;
-  bottom: 61px;
-  margin: 640px 0 0 0;
-  /* top: 715px;
-  left: 80px; */
+  top: 726px; /* 뷰포트에 따라 값 조절 */
   font-weight: 700;
   color: #ffd000;
   font-size: 58px;
-  letter-spacing: -1.45px;
   line-height: 69px;
   white-space: nowrap;
+}
+@media (max-width: 1920px) {
+.sub-title {
+  position: fixed;
+   top: calc(726 / 996 * 100vh); /* 세로가 996일때 사용 640 맞춤 */
+  font-weight: 700;
+  color: #ffd000;
+  font-size: 58px;
+  line-height: 69px;
+  white-space: nowrap;
+}
 }
 
 .description {
@@ -59,11 +64,13 @@ main {
     padding: 0 60px;
   }
   .sub-title {
-    margin: 534px 0 0 0;
+    margin: 0; /* margin-top 대신 top 계산식으로 위치 고정 */
     font-size: 44px;
-    bottom: 61px;
     letter-spacing: -0.025em;
     line-height: 53px;
+
+    bottom: auto; /* 아래 고정 해제 */
+     top: calc(620 / 800 * 100vh); /* 세로 크기에 따라 자동 보정 */
   }
   .description {
     margin: 80px 0px 0 0;
@@ -84,7 +91,7 @@ main {
     margin-top: 30px;
     letter-spacing: -0.6px;
     bottom: unset;
-    
+    top: auto;
   }
   .description {
     font-size: 24px;
@@ -127,11 +134,11 @@ main {
 
 .top-right-video {
   position: fixed;
-  top: 30px;
+  top: 80px;
   right: 133px;
   width: 100%;
-  max-width: 1020px;
-  border-radius: 12px;
+  max-width: 740px;
+  border-radius: 0px;
   overflow: hidden;
 }
 
@@ -141,6 +148,14 @@ main {
   height: 100%;
   object-fit: cover;             /* 화면 비율 맞춤 */
   clip-path: inset(6px 6px 6px 3.6px); /* top, right, bottom, left */
+  transform: translateX(3px);   /* 오른쪽으로 밀기 */
+}
+.top-right-video video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;             /* 화면 비율 맞춤 */
+  clip-path: inset(0 0 0 0); /* top, right, bottom, left */
   transform: translateX(3px);   /* 오른쪽으로 밀기 */
 }
 
@@ -154,11 +169,11 @@ main {
 @media (max-width: 1200px) {
   .top-right-video {
   position: fixed;
-  top: 105px;       /* 상단 위치 (원하는 값으로 수정) */
-  right: 75px;     /* 우측 위치 (원하는 값으로 수정) */
+  top: 80px;       /* 상단 위치 (원하는 값으로 수정) */
+  right: 0px;     /* 우측 위치 (원하는 값으로 수정) */
   width: 100%;
-  max-width: 710px;  /* 비디오 가로 크기 */
-  border-radius: 12px;
+  max-width: 600px;  /* 비디오 가로 크기 */
+  border-radius: 0px;
   overflow: hidden;
 }
 }
@@ -172,7 +187,7 @@ main {
     width: 100%;         
     max-width: 768px;    
     height: auto;
-    border-radius: 12px;
+    border-radius: 0px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -187,6 +202,16 @@ main {
     bottom: -102px;       
     left: 57%;
     transform: translateX(-50%); /* 중앙 기준 확대 */
+  }
+  .top-right-video video {
+    display: block;
+    width: 100%;         /* 부모보다 10% 넓게 */
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    bottom: 0px;       
+    left: 57%;
+    transform: translateX(-57%); /* 중앙 기준 확대 */
   }
 }
 
@@ -213,6 +238,16 @@ main {
   position: absolute;
   bottom:0px;;
   left: 54%;
+  transform: translateX(-50%);
+}
+.top-right-video video {
+  width: 100%;          /* 화면의 80% 크기로 줄임 */
+      /* 390px 기준에서 줄어든 크기 */
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  bottom:0px;;
+  left: 50%;
   transform: translateX(-50%);
 }
 }
