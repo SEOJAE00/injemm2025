@@ -32,6 +32,8 @@ export default function ProjectDetail() {
 
   //console.log(backBtn);
 
+  let horizontalProject = ["uniko", "agronix", "recomos"];
+
   return (
     <div className="project-detail-page">
 
@@ -96,7 +98,12 @@ export default function ProjectDetail() {
       }
 
       {/* 프로토파이 동영상 */}
-      <div className="youtube-wrapper">
+      <div className={
+          horizontalProject.includes(filteredData[0].projectUrl) 
+            ? "youtube-wrapper" 
+            : "youtube-wrapper-vertical"
+        }
+      >
         <iframe
           src={filteredData[0].protopieYoutubeLink}
           title="YouTube video player"
