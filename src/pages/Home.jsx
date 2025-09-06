@@ -3,20 +3,29 @@ import "../css/Home.css";
 
 export default function Home() {
   useEffect(() => {
-    // Home 페이지 들어왔을 때 스크롤 막기
-    document.body.style.overflowY = "hidden";
+    // 기존 값 저장 (페이지 나갈 때 복원할 수 있도록)
+    const prevOverflow = document.body.style.overflowY;
+    const prevOverscroll = document.body.style.overscrollBehaviorY;
+    const prevBg = document.body.style.backgroundColor;
+
+    // Home 페이지 들어왔을 때 적용
+    document.body.style.overflowY = "hidden";          // 스크롤 차단
+    document.body.style.overscrollBehaviorY = "none";  // iOS 바운스 방지
+    document.body.style.backgroundColor = "#ffd603";      // 바운스 시 흰색 대신 검정
 
     // 페이지 벗어날 때(언마운트) 원상복구
     return () => {
-      document.body.style.overflowY = "auto";
+      document.body.style.overflowY = prevOverflow;
+      document.body.style.overscrollBehaviorY = prevOverscroll;
+      document.body.style.backgroundColor = prevBg;
     };
   }, []);
 
   return (
     <div className="Home-page">
       {/* 상단-우측 고정 GIF */}
-      <div className="top-right-video">
-        <video
+      {/*<div className="top-right-video">
+          <video
           src="/img/main_motion4.mp4"
           autoPlay
           muted
@@ -26,13 +35,13 @@ export default function Home() {
           controls={false}
           controlsList="nodownload noplaybackrate nofullscreen"
           disablePictureInPicture
-        /> </div>
-      {/* <div className="top-right-video">
+        /> </div> */}
+      <div className="top-right-video">
         <img
-          src="/img/main_motion.gif"
+          src="/img/main_motion2.gif"
           alt="Main Motion"
         />
-      </div>*/}
+      </div>
 
       <div className="hero-content">
         <p className="description">
