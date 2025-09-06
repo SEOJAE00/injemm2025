@@ -32,6 +32,8 @@ main {
   font-size: 58px;
   line-height: 69px;
   white-space: nowrap;
+  letter-spacing: -1.45px;
+  margin: 0px;
 }
 @media (max-width: 1920px) {
 .sub-title {
@@ -42,6 +44,7 @@ main {
   font-size: 58px;
   line-height: 69px;
   white-space: nowrap;
+  letter-spacing: -1.45px;
 }
 }
 
