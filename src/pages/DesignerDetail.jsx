@@ -6,6 +6,7 @@ import dcsData from "../data/dcs.json";
 import "../css/DesignerDetail.css";
 import "../css/Designer.css";
 import "../css/About.css";
+import ErrorP from '../components/Error';
 
 const THUMB_BASE = "https://injemm2025image.dothome.co.kr/thumbnail/";
 
@@ -48,9 +49,7 @@ export default function DesignerDetail() {
 
   if (!designer) {
     return (
-      <div className="designer-detail-page">
-        <div className="not-found">디자이너를 찾을 수 없습니다.</div>
-      </div>
+      <ErrorP/>
     );
   }
 

@@ -4,6 +4,7 @@ import dcsData from "../data/dcs.json"
 import dcData from "../data/dc.json"
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { useRef, useEffect, useState } from 'react';
+import ErrorP from '../components/Error';
 
 export default function ProjectDetail() {
 
@@ -30,9 +31,11 @@ export default function ProjectDetail() {
     }
   }, [])
 
-  //console.log(backBtn);
-
   let horizontalProject = ["uniko", "agronix", "recomos"];
+
+  if (filteredData.length === 0 || filteredDataIndex === -1) {
+    return <ErrorP/>
+  }
 
   return (
     <div className="project-detail-page">
@@ -97,6 +100,10 @@ export default function ProjectDetail() {
         })
       }
 
+      <div className='text-interaction'>
+        모바일앱 인터렉션
+      </div>
+
       {/* 프로토파이 동영상 */}
       <div className={
           horizontalProject.includes(filteredData[0].projectUrl) 
@@ -117,7 +124,7 @@ export default function ProjectDetail() {
 
       <div className='btn-protopie-wrapper'>
         <a href={filteredData[0].protopieLink} target='blank'>
-          <button className='btn-protopie'>프로토파이 연결 링크</button>
+          <button className='btn-protopie'>인터렉션 체험하기</button>
         </a>
       </div>
 

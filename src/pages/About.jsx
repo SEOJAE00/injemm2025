@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "../css/About.css";
 import { Outlet, useNavigate, useParams } from 'react-router-dom';
+import ErrorP from '../components/Error';
 
 export default function About() {
 
@@ -19,6 +20,10 @@ export default function About() {
   useEffect(() => {
     setTabMenu(menu);
   }, [menu]);
+
+  if (!tabs.map(tab => tab.id).includes(tabMenu)) {
+    return <ErrorP/>
+  }
 
   return (
     <div className="about-page">

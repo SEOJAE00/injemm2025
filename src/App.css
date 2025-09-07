@@ -26,3 +26,12 @@ main {
         padding-top: 70px;
     }
 }
+
+.error-page {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.link-home {
+    color: blue;
+}

@@ -198,6 +198,18 @@
   margin-bottom: 80px;
 }
 
+.text-interaction {
+  color: #0009FF;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.575px;
+  margin: 130px auto 50px;
+}
+
 @media (max-width: 1200px) {
 
   .project-detail-page {
@@ -243,15 +255,15 @@
   /* .youtube-wrapper-vertical {
     width: 40%;
   } */
-   .youtube-wrapper-vertical {
-  position: relative;
-  width: 100%;
-  max-width: 320px;
-  height: auto;
-  padding-bottom: 59%;
-  margin: 0 auto;
-  min-height: 693px;
-}
+  .youtube-wrapper-vertical {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    padding-bottom: 59%;
+    margin: 0 auto;
+    min-height: 693px;
+  }
 
   .img-content {
     margin-bottom: 14px;
@@ -279,6 +291,11 @@
 
   .btn-prev-text {
     font-size: 20px;
+  }
+
+  .text-interaction {
+    font-size: 20px;
+    letter-spacing: -0.5px;
   }
 
 }
@@ -445,4 +462,11 @@
   .btn-layout {
     margin-bottom: 14px;
   }
+
+  .text-interaction {
+    font-size: 16px;
+    letter-spacing: -0.4px;
+    margin: 30px auto 15px;
+  }
+
 }
