@@ -162,7 +162,7 @@ const Header = () => {
     onClick={() => handleMenuClick("about", true)}
     className={`mobile-main-link ${
       openSubMenu === "about"
-        ? "open-submenu"
+        ? "open-submenu about-2"
         : !openSubMenu && activeMenu === "about"
         ? "active-menu"
         : ""
@@ -185,7 +185,7 @@ const Header = () => {
     onClick={() => handleMenuClick("project", true)}
     className={`mobile-main-link ${
       openSubMenu === "project"
-        ? "open-submenu"
+        ? "open-submenu project-2"
         : !openSubMenu && activeMenu === "project"
         ? "active-menu"
         : ""

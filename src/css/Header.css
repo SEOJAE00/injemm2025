@@ -127,6 +127,17 @@
   .burger-btn {
     display: block !important;
     padding: 0px;
+    position: relative;
+        top: 1px;
+  }
+}
+@media (max-width: 390px) {
+ 
+  .burger-btn {
+    display: block !important;
+    padding: 0px;
+    position: relative;
+        top: 2px;
   }
 }
 
@@ -165,7 +176,7 @@
 
 .mobile-main-link {
   display: inline-block;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 32px;
   line-height: 38px;
   color: white;
@@ -177,9 +188,11 @@
   transition: all 0.3s ease;
   text-align: center;
   margin: 0 0 50px 0; /* ← 버튼 간격은 항상 50px 유지 */
-  letter-spacing: -0.8px;
+  letter-spacing: -0.6px;
   padding: 0px;
+   font-family: 'Pretendard', sans-serif;
 }
+
 
 .mobile-main-link.open-submenu {
     font-weight: 600;
@@ -196,10 +209,12 @@
     font-weight: 600;
     background-color: #ffd000;
     color: #0009ff;
-    margin-bottom: 46px;
+    margin-bottom: 47px;
     padding: 4px 22px;
     margin-top: -4px;
     line-height: 37px;
+    position: relative;
+    top: 1px;
 }
 
 .sub-menu {
@@ -236,7 +251,7 @@
 @media (max-width: 768px) {
   .close-btn {
     position: absolute;
-    top: 0px;
+    top: -2px;
     right: 0px;
     z-index: 1100;
     padding: 23px 40px 0 0;
@@ -257,7 +272,8 @@
   .burger-btn svg { width: 30px; height: 30px; }
   .close-btn { padding: 20px 20px 0 0; }
   .close-btn svg { width: 30px; }
-  .mobile-main-link { margin-bottom: 50px; }
+  .mobile-main-link { margin-bottom: 50px; position: relative;
+    top: 0px; }
   .mobile-main-link.active { margin-bottom: 36px;margin-top: -4px; }
   .sub-menu li { margin-bottom: 20px; }
   ul.sub-menu { margin-bottom: 34px; }
@@ -267,7 +283,17 @@
     margin: clamp(150px, 32vh, 270px) auto 0 auto;
     text-align: center;
     display: block;
+    
   
+}
+.mobile-main-link.about-2 {
+  position: relative;
+  top: -3px;
+}
+.mobile-main-link.project-2 {
+  position: relative;
+  top: 0px;
+  margin-bottom: 36px;
 }
 .mobile-menu {
   width: 75%;

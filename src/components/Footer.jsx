@@ -24,8 +24,8 @@ export default function Footer() {
         </p>
 
         <p className="inje-footer-group-p-right">
-          Division of Multimedia Design, Inje University
-          <br />50834 Shinseogwan(C-504), 197, Inje-ro, Gimhae-si,<br className="f-p-390"/>
+          Inje University Division of Multimedia Design
+          <br />50834 Shinseogwan(C-504),<br className="f-p-390"/>197, Inje-ro, Gimhae-si,
           Gyeongsangnam-do, South Korea
         </p>
 

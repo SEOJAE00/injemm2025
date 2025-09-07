@@ -99,6 +99,8 @@
   font-weight: 600;
   letter-spacing: -0.95px;
   line-height: 46px;
+  position: relative;
+  top: 1px;
 }
 
 .text-wrapper-2 {
@@ -108,6 +110,8 @@
   letter-spacing: -0.95px;
   margin-top: 10px;
   line-height: 46px;
+  position: relative;
+  top: 1px;
 }
 
 .content-row {
@@ -156,6 +160,21 @@
 }
 .vi-p {
   margin-bottom: 34px;
+  position: relative;
+  top: -1px;
+}
+.vi-p2 {
+  position: relative;
+  top: -1px;
+}
+.vi-rec {
+  margin-bottom: 34px;
+  position: relative;
+  top: 0px;
+}
+.vi-rec2 {
+  position: relative;
+  top: 0px;
 }
 /* -----------------------------------------------------------------
 반응형 시작
@@ -178,7 +197,7 @@
 .text-wrapper-2 {
   font-size: 38px;
 }
-.vi-p {
+.vi-p ,.vi-rec{
   margin-bottom: 34px;
 }
 .visualid_img {
@@ -221,12 +240,16 @@
     font-size: 11px;
     letter-spacing: -0.275px;
   }
-  .text-wrapper-body-left,
   .text-wrapper-body-right {
     font-size: 20px;
     line-height: 30px;
     letter-spacing: -0.5px;
   }
+    .text-wrapper-body-left {
+      font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.49px;
+    }
   .text-wrapper,
   .text-wrapper-2 {
     font-size: 30px;
@@ -270,6 +293,9 @@
   .vi-p{
     margin-bottom: 24px;
   }
+   .vi-rec{
+    margin-bottom: 24px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -307,11 +333,16 @@
   .vi-p{
     margin-bottom: 24px;
   }
+  .vi-rec{
+    margin-bottom: 24px;
+  }
   img.visualid_img {
     width: 100%;
     max-width: 1000px;
     height: 100%;
   }
+
+
   .tab-item {
     width: clamp(200px, 18vw, 208px);
     min-width: 180px;
@@ -341,7 +372,7 @@
     all: unset;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 16px;
     cursor: pointer;
     user-select: none;
     font-weight: 300;
@@ -351,6 +382,7 @@
     top: 138px;
     left: 40px;
     transition: top 0.3s ease;
+    letter-spacing: -0.36px;
   }
 
   .back-button svg {
@@ -367,6 +399,7 @@
     font-size: 20px;
     line-height: 30px;
     flex: auto;
+    letter-spacing: -0.49px;
   }
   .about-page {
     width: 100%;
@@ -375,8 +408,8 @@
   .ab-con-body {
     margin-top: 0px;
   }
-}
 
+}
 @media (max-width: 390px) {
   .text-wrapper-body-left,
   .text-wrapper-body-right {
@@ -396,6 +429,8 @@
       font-size: 20px;
       line-height: 24px;
       letter-spacing: -0.5px;
+      position: relative;
+      top: 0px;
     }
   .about-page {
     width: 100%;
@@ -427,12 +462,16 @@
     gap: 16px;
     margin-top: 30px;
     margin-bottom: 24px;
+    position: relative;
+    top: 1px;
   }
   .content-row-3 {
     display: flex;
     gap: 16px;
     margin-top: 30px;
     margin-bottom: 24px;
+    position: relative;
+    top: 1px;
   }
   .content-row-vi {
     display: flex;
@@ -608,7 +647,7 @@
     margin-bottom: 80px;
   }
   .committee-table {
-    max-width: 1000px;
+    max-width: 686px;
     width: 100%;
     margin-top: 16px;
   }
@@ -646,6 +685,10 @@
   .text-wrapper-body-right {
     font-size: 20px;
     line-height: 30px;
+    letter-spacing: -0.49px;
+  }
+  .vi-p2 {
+    letter-spacing: -0.50px;
   }
 }
 @media (max-width: 600px) {
@@ -699,11 +742,13 @@
   }
   .committee-table{
     margin-top: 0px;
+    position: relative;
+    top: -1px;
   }
   .committee-row {
     flex-direction: column;
     align-items: flex-start;
-    padding: 16px 20px;
+    padding: 16.5px 20px;
     height: auto;
   }
   .team-name {
@@ -735,4 +780,59 @@
   .vi-p{
     margin-bottom: 16px;
   }
+  .vi-rec{
+    margin-bottom: 16px;
+  }
+}
+.ab-card-img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  gap: 24px;
+  max-width: 700px;        /* 기본 최대폭 */
+  width: 100%;             /* 부모 폭 안에서만 동작 */
+  box-sizing: border-box;  /* 패딩 포함 계산 */
+  overflow: hidden; 
+}
+
+.visualid_img2 {
+  flex: 1;                 /* 두 이미지가 같은 비율로 차지 */
+  height: auto;
+  object-fit: cover;
+  width: 100%;             /* 부모 폭 안에서만 동작 */
+  box-sizing: border-box;  /* 패딩 포함 계산 */
+  overflow: hidden; 
+}
+
+/* ✅ 1200px 이하 */
+@media (max-width: 1200px) {
+  .ab-card-img {
+    gap: 16px;
+    max-width: 520px;
+  }
+}
+
+/* ✅ 768px 이하 */
+@media (max-width: 768px) {
+  .ab-card-img {
+    gap: 24px;
+    max-width: 688px;
+  }
+}
+
+/* ✅ 390px 이하 */
+@media (max-width: 390px) {
+  .ab-card-img {
+    gap: 12px;
+    max-width: 350px;
+  }
+
+  .vi-vi{
+    position: relative;
+    top: 2px;
+  }
+}
+.vi-vi {
+  min-width: 440px;
 }
