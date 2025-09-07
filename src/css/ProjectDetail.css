@@ -41,7 +41,7 @@
   font-size: 27px;
   font-style: normal;
   line-height: normal;
-  letter-spacing: -0.95px;
+  letter-spacing: -0.675px;
 }
 
 .sn-upper {
@@ -65,7 +65,7 @@
 .student-info {
   display: flex;
   gap: 54px;
-  margin-bottom: 64px;
+  margin-bottom: 63px;
 }
 
 .text-email {
@@ -224,10 +224,11 @@
 
   .student-name {
     font-size: 22px;
+    letter-spacing: -0.55px;
   }
 
   .student-info {
-    margin-bottom: 70px;
+    margin-bottom: 69px;
     gap: 50px;
   }
 

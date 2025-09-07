@@ -44,7 +44,7 @@
 
 .subject-en {
   font-weight: 400;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 
 .prof {
@@ -196,6 +196,7 @@
 
   .subject-en {
     letter-spacing: -0.75px;
+    margin-bottom: 39px;
   }
 
   .prof {
@@ -210,6 +211,7 @@
   .description-subject {
     font-size: 20px;
     line-height: 30px;
+    letter-spacing: -0.5px;
   }
 
   .card-wrapper {
@@ -246,6 +248,7 @@
   .description-subject {
     flex: 1;
     font-size: 20px;
+    letter-spacing: -0.5px;
   }
 
   .card-wrapper {
@@ -286,6 +289,10 @@
 
   .prof {
     font-size: 18px;
+  }
+
+  .prof-ko {
+    margin-bottom: 9px;
   }
 
   .prof-en {
