@@ -717,7 +717,7 @@
     padding-left: 20px;
     letter-spacing: -0.4px;
   }
-  .text-wrapper-body-right {
+  .text-wrapper-body-right, .text-wrapper-body-left {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 16px;
@@ -784,6 +784,9 @@
     margin-bottom: 16px;
   }
 }
+.vi-vi {
+  min-width: 440px;
+}
 .ab-card-img {
   display: flex;
   justify-content: center;
@@ -812,12 +815,23 @@
     max-width: 520px;
   }
 }
+@media (max-width: 1000px) {
+  .ab-card-img {
+    gap: 16px;
+    max-width: 100%;
+  }
+}
 
 /* ✅ 768px 이하 */
 @media (max-width: 768px) {
   .ab-card-img {
     gap: 24px;
     max-width: 688px;
+  }
+  .vi-vi{
+    position: relative;
+    top: 2px;
+    min-width: 200px;
   }
 }
 
@@ -831,8 +845,6 @@
   .vi-vi{
     position: relative;
     top: 2px;
+    min-width: 100px;
   }
-}
-.vi-vi {
-  min-width: 440px;
 }
