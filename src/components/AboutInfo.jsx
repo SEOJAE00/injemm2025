@@ -42,7 +42,7 @@ function Aboutinfo() {
         <div className="content-row-vi">
           <img src="/img/about1.png" alt="UNFOLD THE FLOW" className="visualid_img" />
           <div className="ab-right">
-            <span className="text-wrapper-body-right vi-p" style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
+            <span className="text-wrapper-body-right vi-p" style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
               {filteredData[0].descriptionKo.map((a, i)=>{
                 return (
                   <div key={i}>
@@ -52,7 +52,7 @@ function Aboutinfo() {
               })
               }
             </span>
-            <span className="text-wrapper-body-right vi-p2" style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
+            <span className="text-wrapper-body-right vi-p2" style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
               {filteredData[0].descriptionEn.map((a, i)=>{
                 return (
                   <div key={i}>
@@ -72,7 +72,7 @@ function Aboutinfo() {
         <div className="text-wrapper">{filteredData[0].menuKo}</div>
         <div className="text-wrapper-2">{filteredData[0].menuEn}</div>
         <div className="content-row-3">
-          <span className="text-wrapper-body-left" style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
+          <span className="text-wrapper-body-left" style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
             {
               filteredData[0].descriptionKo.map((a, i)=>{
                 return (
@@ -83,7 +83,7 @@ function Aboutinfo() {
               })
             }
           </span>
-          <span className="text-wrapper-body-right"style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
+          <span className="text-wrapper-body-right"style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
             {
               filteredData[0].descriptionEn.map((a, i)=>{
                 return (
