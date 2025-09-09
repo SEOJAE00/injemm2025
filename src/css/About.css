@@ -813,6 +813,11 @@
     gap: 16px;
     max-width: 520px;
   }
+  .vi-vi {
+  min-width: 440px;
+  position: relative;
+  top: 1px;
+}
 }
 @media (max-width: 1000px) {
   .ab-card-img {
