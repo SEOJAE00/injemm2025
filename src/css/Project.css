@@ -261,10 +261,10 @@
 
 }
 
-@media (max-width: 390px) {
+@media (max-width: 440px) {
 
   .project-page {
-    max-width: 390px;
+    max-width: 440px;
     padding: 0px 20px 0px 20px;
   }
 
@@ -311,12 +311,12 @@
   }
 
   .card-wrapper {
-    gap: 40px 0;
+    gap: 40px 20px;
     margin-bottom: 14px;
   }
-
+  
   .card-wrapper > div {
-    flex: 0 0 100%;
+    flex: 0 0 calc((100% - 20px) / 2);
   }
 
   .ntext1 {

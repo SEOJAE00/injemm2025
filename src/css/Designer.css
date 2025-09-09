@@ -175,7 +175,7 @@
 }
 
 /* 390px */
-@media (max-width: 390px) {
+@media (max-width: 440px) {
   .designer-grid {
     grid-template-columns: 1fr;
   }
@@ -192,7 +192,7 @@
   .designer-card {
     padding: 22px 0;
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
     gap: 3px;
 }
 .designer-grid {

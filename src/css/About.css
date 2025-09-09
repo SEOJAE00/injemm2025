@@ -410,7 +410,7 @@
   }
 
 }
-@media (max-width: 390px) {
+@media (max-width: 440px) {
   .text-wrapper-body-left,
   .text-wrapper-body-right {
     font-size: 16px;
@@ -725,7 +725,7 @@
 
 }
 /* --- 390px 이하 --- */
-@media (max-width: 390px) {
+@media (max-width: 440px) {
   .content-row {
     flex-direction: column-reverse;
     gap: 30px;
@@ -840,10 +840,10 @@
 }
 
 /* ✅ 390px 이하 */
-@media (max-width: 390px) {
+@media (max-width: 440px) {
   .ab-card-img {
     gap: 12px;
-    max-width: 350px;
+    max-width: 400px;
   }
 
   .vi-vi{

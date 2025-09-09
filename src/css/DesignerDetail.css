@@ -117,7 +117,7 @@
 }
 
 /* 390px 이하 - 카드 폭 350px 고정 */
-@media (max-width: 390px) {
+@media (max-width: 440px) {
   .designer-detail-page {
     padding: 0px 20px 14px 20px;
   }
@@ -128,7 +128,7 @@
   .work-card,
   .thumb-wrap {
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
   }
    .detail-name-kr {
     font-size: 22px;
@@ -171,7 +171,7 @@
 }
 
 /* 600px 이하 (391~600) - 화면 폭 꽉 채우기 */
-@media (max-width: 600px) and (min-width: 391px) {
+@media (max-width: 600px) and (min-width: 441px) {
   .works {
     gap: 40px;
     grid-template-columns: 1fr;

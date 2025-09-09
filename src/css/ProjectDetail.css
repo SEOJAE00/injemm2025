@@ -368,15 +368,15 @@
 
 }
 
-@media (max-width: 390px) {
+@media (max-width: 440px) {
 
   .project-detail-page {
-    max-width: 390px;
+    max-width: 440px;
     padding: 0 20px;
   }
 
   .desc-text-wrapper-detail {
-    max-width: 350px;
+    max-width: 400px;
     gap: 16px;
     margin-bottom: 30px;
   }

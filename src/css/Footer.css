@@ -128,7 +128,7 @@
   }
 }
 /* ===== 390px 이하 ===== */
-@media (max-width: 390px) {
+@media (max-width: 440px) {
   .inje-footer-group {
     flex-direction: column;
     align-items: flex-start;
@@ -144,7 +144,7 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 440px) {
   .inje-footer-group-390 {
     flex-direction: column;
     align-items: flex-start;
