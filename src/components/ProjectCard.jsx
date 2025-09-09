@@ -15,12 +15,12 @@ function ProjectCard() {
   let aboutData = [
     { 
       subject: ["디지털컨텐츠스튜디오", "Digital Contents Studio"],
-      prof: ["전우정", "Woojeong Chon"],
+      prof: ["지도교수 전우정", "Prof. Woojeong Chon"],
       description: ["인간, 사회, 환경, 문화, 기술 등 다양한 분야의 주제를 발굴하여, 서비스디자인 관점에서 해당 문제를 깊이있게 탐색한 후, 어플리케이션 UX/UI 디자인 및 프로토타입 제작을 통해 해결안을 제안합니다.", "We explore topics across various fields including humanity, society, environment, culture, and technology. From a service design perspective, we conduct in-depth research into these issues, then propose solutions through application UX/UI design and prototype development."] 
     },
     { 
       subject: ["DC 졸업연구", "Degree Project in DC Design"],
-      prof: ["류안영", "Anyoung Ryou"],
+      prof: ["지도교수 류안영", "Prof. Anyoung Ryou"],
       description: ["DC(Digital Contents) 졸업연구는 학생들이 4년간의 수업과 과제를 통해 성장한 결과물을 선보이는 모바일 앱 중심의 디지털 콘텐츠 프로젝트입니다. 미래지향적 기술과 차별화된 관점, 창의적인 아이디어를 담아 다양한 주제의 사용자 경험 디자인을 통해 참신한 디지털 경험을 제안합니다.", "DC (Digital Contents) Graduation Research is a digital content project focused on mobile applications, showcasing students' creative outcomes developed through four years of structured coursework and assignments. This project introduces fresh digital experiences through user experience (UX) design, incorporating innovative ideas, distinctive perspectives, and future-oriented technologies. By exploring diverse themes and creative approaches, students deliver the content that highlights the possibilities of digital media."] 
     }
   ];
