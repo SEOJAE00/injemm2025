@@ -45,16 +45,24 @@ export default function Home() {
 
       <div className="hero-content">
         <p className="description">
+          인제대학교<br />
+          멀티미디어학부<br />
+          디지털 콘텐츠 전공<br />
+          2025 졸업전시회
+        </p>
+      </div>
+      {/* <div className="hero-content">
+        <p className="description">
           INJE University<br />
           Division of Multimedia Design<br />
           Digital Contents<br />
           2025 Graduation Exhibition
         </p>
-      </div>
+      </div> */}
 
-      <div className="Home-sub">
+      {/* <div className="Home-sub">
         <h2 className="sub-title">여정의 전개</h2>
-      </div>
+      </div> */}
     </div>
   );
 }

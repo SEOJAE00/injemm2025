@@ -180,85 +180,7 @@ main {
 }
 }
 
-@media (max-width: 768px) {
-  .top-right-video {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 768px;
-    /* height: 80vh; 부모 높이를 화면 기준으로 지정 */
-    border-radius: 0px;
-    overflow: hidden;
-    background-color: #ffd603;
 
-    display: flex;
-    justify-content: center; /* 가로 중앙 */
-    align-items: center;     /* 세로 중앙 */
-  }
-
-  .top-right-video img,
-  .top-right-video video {
-    max-width: 100%;
-    max-height: 100%;  /* 부모 높이 기준 */
-    width: auto;
-    height: auto;
-    object-fit: contain; /* 비율 유지, 짤리지 않음 */
-  }
-
-   .sub-title {
-    display: none;
-  }
-
-  .description {
-    display: none;
-  }
-}
-
-
-
-@media (max-width: 390px) {
-  .top-right-video {
-    position: relative;
-    bottom: 0;           
-    left: 50%;           
-    transform: translateX(-50%); 
-    width: 100%;         
-    max-width: 390px;    
-    height: auto;
-    border-radius: 0px;
-    overflow: hidden;
-    display: block;
-  }
-
-.top-right-video img {
-  width: 100%;          
-  height: auto;
-  object-fit: cover;
-  position: relative;
-  /* bottom:auto;
-  left: 50%;
-  transform: translateX(-50%);  */
-}
-.top-right-video video {
-  width: 100%;          
-  height: auto;
-  object-fit: cover;
-  position: relative;
-  /* bottom:auto;
-  left: 50%;
-  transform: translateX(-50%);  */
-}
-
- .sub-title {
-    display: none;
-  }
-
-  .description {
-    display: none;
-  }
-}
 video {
   display: block;   /* inline 기본 속성 제거 */
   margin: 0;
@@ -289,7 +211,7 @@ video {
     object-fit: contain;
   }
   .top-right-video img {
-    max-width: 109%;
+    max-width: 100%;
     max-height: 100%;
     width: auto;
     height: auto;
@@ -317,4 +239,110 @@ video {
 }
 .top-right-video video::-webkit-media-controls-start-playback-button {
   display: none !important;
+}
+@media (max-width: 768px) {
+  .top-right-video {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 768px;
+    /* height: 80vh; 부모 높이를 화면 기준으로 지정 */
+    border-radius: 0px;
+    overflow: hidden;
+    background-color: #ffd603;
+    padding : 0px 40px;
+    display: flex;
+    justify-content: center; /* 가로 중앙 */
+    align-items: center;
+    /* align-items: center;     세로 중앙 */
+    top: 80px;
+  }
+
+  .top-right-video img,
+  .top-right-video video {
+    max-width: 113%;
+    max-height: none;  /* 부모 높이 기준 */
+    width: auto;
+    height: auto;
+    object-fit: contain; /* 비율 유지, 짤리지 않음 */
+    position: relative;
+    right: 2px;
+  }
+
+   .sub-title {
+    display: none;
+  }
+
+  .description {
+    display: none;
+  }
+}
+@media (max-width: 440px) {
+    .top-right-video {
+      top: 70px;
+    }
+}
+
+
+@media (max-width: 390px) {
+  .top-right-video {
+    /* position: relative;
+    bottom: 0;           
+    left: 50%;           
+    transform: translateX(-50%); 
+    width: 100%;         
+    max-width: 390px;    
+    height: auto;
+    border-radius: 0px;
+    overflow: hidden;
+    display: block;
+    padding : 0px 20px; */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 390px;
+    /* height: 80vh; 부모 높이를 화면 기준으로 지정 */
+    border-radius: 0px;
+    overflow: hidden;
+    background-color: #ffd603;
+    padding : 0px 20px;
+    display: flex;
+    justify-content: center; /* 가로 중앙 */
+    top: 70px;
+    align-items: center;
+    /* align-items: center;     세로 중앙 */
+  }
+
+.top-right-video img {
+  width: auto;
+  max-width: 112%;          
+  height: auto;
+  object-fit: cover;
+  position: relative;
+  right: 2px;
+  /* bottom:auto;
+  left: 50%;
+  transform: translateX(-50%);  */
+}
+.top-right-video video {
+  width: 100%;          
+  height: auto;
+  object-fit: cover;
+  position: relative;
+  /* bottom:auto;
+  left: 50%;
+  transform: translateX(-50%);  */
+}
+
+ .sub-title {
+    display: none;
+  }
+
+  .description {
+    display: none;
+  }
 }

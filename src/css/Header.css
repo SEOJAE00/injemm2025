@@ -11,7 +11,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #0000ff;
-  box-shadow: 0 0 7px #00047d;
+  /* box-shadow: 0 0 7px #00047d; */
   z-index: 1000;
   padding: 0px 80px;
 }

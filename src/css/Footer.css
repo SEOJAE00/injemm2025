@@ -1,7 +1,7 @@
 .inje-footer {
   width: 100%;
   background: #e4eef9;
-  box-shadow: 0 0 5px 0 rgba(0, 4, 125, 0.1);
+  /* box-shadow: 0 0 5px 0 rgba(0, 4, 125, 0.1); */
   display: flex;
   justify-content: center;
 }
