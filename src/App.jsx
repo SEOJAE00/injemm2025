@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route, useLocation, Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import "./app.css";
+import "./App.css";
+import "./index.css";
 
 
 function AppLayout() {
@@ -10,7 +11,6 @@ function AppLayout() {
 
   return (
     <>
-      {/* 푸터가 바닥에 붙도록 수정함 8/14 1130 */}
       <div className='grid-web-contnets'> 
         <Header />
         <main className="app_jsx_top">

@@ -351,6 +351,17 @@
   }
 }
 
+@media (max-width: 900px) {
+  .tab-item {
+    width: clamp(140px, 16vw, 180px);
+    min-width: 140px;
+    height: 54px;
+  }
+  .tab-subtitle {
+    display: none;
+  }
+}
+
 /* 768px 이하 */
 @media (max-width: 768px) {
   .tab-container {

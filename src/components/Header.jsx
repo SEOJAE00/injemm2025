@@ -173,7 +173,7 @@ const Header = () => {
   {openSubMenu === "about" && (
     <ul className="sub-menu">
       <li onClick={() => handleSubMenuClick("/about/unfold")}>여정의 전개</li>
-      <li onClick={() => handleSubMenuClick("/about/vi")}>비주얼 그래픽</li>
+      <li onClick={() => handleSubMenuClick("/about/vi")}>비주얼 아이덴티티</li>
       <li onClick={() => handleSubMenuClick("/about/dcmajor")}>디지털콘텐츠 전공</li>
       <li onClick={() => handleSubMenuClick("/about/precom")}>졸업준비 위원회</li>
     </ul>

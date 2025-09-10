@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import "../css/Home.css";
 
 export default function Home() {
+  
   useEffect(() => {
     // 기존 값 저장 (페이지 나갈 때 복원할 수 있도록)
     const prevOverflow = document.body.style.overflowY;
@@ -10,14 +11,14 @@ export default function Home() {
 
     // Home 페이지 들어왔을 때 적용
     document.body.style.overflowY = "hidden";          // 스크롤 차단
-    document.body.style.overscrollBehaviorY = "none";  // iOS 바운스 방지
-    document.body.style.backgroundColor = "#ffd603";      // 바운스 시 흰색 대신 검정
+    //document.body.style.overscrollBehaviorY = "none";  // iOS 바운스 방지
+    //document.body.style.backgroundColor = "#ffd603";      // 바운스 시 흰색 대신 검정
 
     // 페이지 벗어날 때(언마운트) 원상복구
     return () => {
       document.body.style.overflowY = prevOverflow;
-      document.body.style.overscrollBehaviorY = prevOverscroll;
-      document.body.style.backgroundColor = prevBg;
+    //  document.body.style.overscrollBehaviorY = prevOverscroll;
+    //  document.body.style.backgroundColor = prevBg;
     };
   }, []);
 

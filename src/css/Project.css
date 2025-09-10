@@ -1,5 +1,4 @@
 .project-page {
-  background: #fff;
   box-sizing: border-box;
   width: 100%;
   max-width: 1560px;
@@ -314,7 +313,7 @@
     gap: 40px 20px;
     margin-bottom: 14px;
   }
-  
+
   .card-wrapper > div {
     flex: 0 0 calc((100% - 20px) / 2);
   }
