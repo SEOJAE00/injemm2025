@@ -38,7 +38,7 @@ export default function Project() {
             role="tab"
             aria-selected={tabMenu === tab.id}
             tabIndex={tabMenu === tab.id ? 0 : -1}
-            className={`tab-item ${tabMenu === tab.id ? "active" : ""}`}
+            className={`tab-item ${tabMenu === tab.id ? "active" : ""} pj-btn`}
             onClick={()=>navigate(`/project/${tab.id}`)}
           >
             <div className="tab-title">{tab.title}</div>

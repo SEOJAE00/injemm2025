@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: 'Pretendard', sans-serif;
-  overscroll-behavior: none;
+  /* overscroll-behavior: none; */
 }
 
 div {

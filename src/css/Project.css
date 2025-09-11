@@ -227,6 +227,12 @@
 
 }
 
+@media (max-width: 900px) {
+  .pj-btn {
+    width: 160px !important;
+  }
+}
+
 @media (max-width: 768px) {
 
   .project-page {
