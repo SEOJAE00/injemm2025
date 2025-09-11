@@ -101,7 +101,7 @@ export default function ProjectDetail() {
       }
 
       <div className='text-interaction'>
-        모바일앱 인터랙션
+        모바일앱 시연 영상
       </div>
 
       {/* 프로토파이 동영상 */}
@@ -124,7 +124,7 @@ export default function ProjectDetail() {
 
       <div className='btn-protopie-wrapper'>
         <a href={filteredData[0].protopieLink} target='blank'>
-          <button className='btn-protopie'>인터랙션 체험하기</button>
+          <button className='btn-protopie'>모바일앱 체험하기</button>
         </a>
       </div>
 
