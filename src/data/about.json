@@ -17,8 +17,8 @@
     "path": "dcmajor",
     "menuKo": "디지털콘텐츠 전공",
     "menuEn": "Digital Contents Major",
-    "descriptionKo": ["디지털 기술과 미디어 환경의 빠른 변화 속에서, 온라인과 오프라인의 경계는 점점 허물어지고 있으며, 가상과 현실을 넘나드는 콘텐츠가 새로운 커뮤니케이션의 중심이 되고 있습니다. 이러한 흐름 속에서, 창의적 사고와 기술 융합 역량을 갖춘 전문 인재에 대한 수요가 더욱 높아지고 있습니다. 인제대학교 멀티미디어학부 디지털콘텐츠 전공은 모바일앱/웹, 인터랙티브 콘텐츠, 혼합미디어 등 다양한 디지털 플랫폼에서 활용되는 콘텐츠 기획 및 제작 역량을 중심으로 교육합니다. 사용자 중심의 사고를 바탕으로, 창의적 콘텐츠를 직접 설계하고 구현할 수 있는 실무형 인재를 양성합니다."],
-    "descriptionEn": ["As digital media and technology rapidly evolve, the lines between online and offline are disappearing. Content that connects the virtual and real worlds is now a key form of communication, increasing demand for creative professionals with cross-disciplinary digital skills. The Digital Contents major in the Division of Multimedia Design at Inje University focuses on planning and producing content for mobile apps, web platforms, interactive media, and mixed formats. The program nurtures practical, creative talents who can design and develop user-centered experiences."]
+    "descriptionKo": ["디지털 기술과 미디어 환경의 빠른 변화 속에서, 온라인과 오프라인의 경계는 점점 허물어지고 있으며, 가상과 현실을 넘나드는 콘텐츠가 새로운 커뮤니케이션의 중심이 되고 있습니다. 이러한 흐름 속에서, 창의적 사고와 기술 융합 역량을 갖춘 전문 인재에 대한 수요가 더욱 높아지고 있습니다.", "인제대학교 멀티미디어학부 디지털콘텐츠 전공은 모바일앱/웹, 인터랙티브 콘텐츠, 혼합미디어 등 다양한 디지털 플랫폼에서 활용되는 콘텐츠 기획 및 제작 역량을 중심으로 교육합니다. 사용자 중심의 사고를 바탕으로, 창의적 콘텐츠를 직접 설계하고 구현할 수 있는 실무형 인재를 양성합니다."],
+    "descriptionEn": ["As digital media and technology rapidly evolve, the lines between online and offline are disappearing. Content that connects the virtual and real worlds is now a key form of communication, increasing demand for creative professionals with cross-disciplinary digital skills.", "The Digital Contents major in the Division of Multimedia Design at Inje University focuses on planning and producing content for mobile apps, web platforms, interactive media, and mixed formats. The program nurtures practical, creative talents who can design and develop user-centered experiences."]
   },
   {
     "path": "precom",
